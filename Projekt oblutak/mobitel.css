@@ -168,7 +168,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
-        
+        font-size: 22px;
     }
     
     
@@ -223,6 +223,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija2{
         display: flex;
@@ -280,7 +281,7 @@
         width: 150px;
         background-color:#9ab794;
         
-        top: 60px;
+        top: 65px;
         left: 20px;
         color: black;
         font-weight: bold;
@@ -374,6 +375,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija3{
         display: flex;
@@ -473,6 +475,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija4{
         display: flex;
@@ -621,6 +624,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija5{
         display: flex;
@@ -713,6 +717,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija6{
         display: flex;
@@ -850,6 +855,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija7{
         display: flex;
@@ -941,6 +947,7 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         font-family: "sansbold";
+        font-size: 22px;
     }
     .granulacija8{
         display: flex;
