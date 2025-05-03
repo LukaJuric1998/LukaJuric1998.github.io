@@ -1,0 +1,526 @@
+.container1{
+    display: flex;
+    height: 220px;
+    width: 100%;
+    flex-wrap: wrap;
+   
+    
+    
+    
+}
+.lijevo1{
+    
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.lijevo1 img{
+    height: 150px;
+    width: 220px;
+    margin-bottom: 10px;
+    
+    
+}
+.desno1{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    background-color: #B2CBAE;
+    position: relative;
+    
+    
+    
+    
+    
+}
+.granulacija1{
+    display: flex;
+     position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.granulacija1 p{
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: "sanswork";
+   
+}
+.granulacija1 ul{
+    list-style-type: none;
+    
+    font-family: "sanswork";
+    padding: 5px;
+    list-style-type: none;
+    columns: 2;
+    margin-top: 20px;
+    margin-left: -80px;
+    column-gap: 150px;
+    font-size: 12px;
+    
+    
+    
+}
+.uteg1 {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 200px;
+   
+    
+}
+.uteg1 img{
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 10;
+    
+    
+}
+.botun1{
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    background-color:#9ab794;
+    flex-wrap: wrap;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+.botun1:hover{
+    background-color: rgb(161, 99, 76);
+    color: aqua;
+}
+.desno1 h3{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: "sansbold";
+
+    
+}
+.desno1 h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #464c45;
+    
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: "sansbold";
+    
+}
+
+
+.imagecont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+    align-content: center;
+    overflow: visible;
+   
+}
+    
+    
+
+    
+    
+
+
+.container2{
+    display: flex;
+    height: 220px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+.lijevo2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: #B2CBAE;
+    flex-direction: column;
+    position: relative;
+    
+}
+.lijevo2 h3{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: "sansbold";
+}
+.lijevo2 h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #464c45;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: "sansbold";
+}
+.granulacija2{
+    display: flex;
+     position: relative;
+    flex-direction: row;
+    
+    
+    
+}
+.granulacija2 p{
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: "sanswork";
+   
+}
+.granulacija2 ul{
+    list-style-type: none;
+    
+    font-family: "sanswork";
+    padding: 5px;
+    list-style-type: none;
+    columns: 2;
+    margin-top: 20px;
+    margin-left: -80px;
+    column-gap: 150px;
+    font-size: 12px;
+}
+.uteg2 {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 200px;
+    
+}
+.uteg2 img{
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 10;
+    
+    
+}
+.botun2{
+    position: absolute;
+    height: 35px;
+    width: 135px;
+    background-color:#9ab794;
+    border: none;
+    top: 65px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+}
+.botun2:hover{
+    background-color: rgb(161, 99, 76);
+    color: aqua;
+}
+    
+.desno2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    
+    align-items: center;
+    justify-content: center;
+}
+.desno2 img{
+    height: 140px;
+    width: 140px;
+    
+}
+.imagecont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+    align-content: center;
+    overflow: visible;
+   
+}
+.container3{
+    display: inline-flex;
+    height: 220px;
+    width: 100%;
+    
+}
+.lijevo3{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lijevo3 img{
+    height: 100px;
+    width: 220px;
+    
+}
+.imagecont3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ab794;
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+    align-content: center;
+    overflow: visible;
+}
+.desno3{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: #B2CBAE;
+    flex-direction: column;
+    position: relative;
+}
+.desno3 h3{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: "sansbold";
+}
+.desno3 h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #464c45;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: "sansbold";
+}
+.granulacija3{
+    display: flex;
+     position: relative;
+    flex-direction: row;
+    
+    
+    
+}
+.granulacija3 p{
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: "sanswork";
+}
+.granulacija3 ul{
+    list-style-type: none;
+    padding: 5px;
+    list-style-type: none;
+    columns: 2;
+    margin-top: 20px;
+    margin-left: -80px;
+    column-gap: 150px;
+    font-size: 12px;
+    font-family: "sanswork";
+    
+}
+.uteg3 {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 210px;
+    
+}
+.uteg3 img{
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 10;
+    
+    
+}
+.botun3{
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    background-color:#9ab794;
+    border: none;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+}
+.botun3:hover{
+    background-color: rgb(161, 99, 76);
+    color: aqua;
+}
+
+.container4{
+    display: inline-flex;
+    height: 220px;
+    width: 100%;
+    
+}
+.lijevo4{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: #B2CBAE;
+    flex-direction: column;
+    position: relative;
+}
+.lijevo4 h3{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: "sansbold";
+}
+.lijevo4 h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #464c45;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: "sansbold";
+}
+.granulacija4{
+    display: flex;
+     position: relative;
+    flex-direction: row;
+    
+    
+    
+}
+.granulacija4 p{
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: "sanswork";
+}
+.granulacija4 ul{
+    list-style-type: none;
+    padding: 5px;
+    list-style-type: none;
+    columns: 2;
+    margin-top: 20px;
+    margin-left: -80px;
+    column-gap: 150px;
+    font-size: 12px;
+    font-family: "sanswork";
+    
+}
+.uteg4 {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 200px;
+    
+}
+.uteg4 img{
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.botun4{
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    background-color:#9ab794;
+    border: none;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+}
+.botun4:hover{
+    background-color: rgb(161, 99, 76);
+    color: aqua;
+}
+
+
+.desno4{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.desno4 img{
+    height: 150px;
+    width: 200px;
+    margin-bottom: 12px;
+}
+.imagecont4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ab794;
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+    align-content: center;
+    overflow: visible;
+}

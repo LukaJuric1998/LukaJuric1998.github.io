@@ -1,0 +1,1156 @@
+@media screen and (min-width: 320px) and (max-width:600px){
+    body{
+        zoom: 0.50;
+        margin: 0;
+    }
+    img{
+        height: 400px;
+        width: 50vw;
+        float: right;
+        object-fit: cover;
+    }
+    header{
+        height: 400px;
+        background-color: white;
+        position: relative;
+        
+    }
+     .bottom{
+        position: absolute;
+        bottom: 10px;
+        left:10px;
+        text-transform: uppercase;
+    }
+    .bottom h1{
+        color: #B2CBAE;
+        font-family: "sansbold";
+        text-decoration: underline;
+        text-underline-offset: 15px;
+    }
+    .naslov{
+        height: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #9ab794;
+        padding: 30px;
+        font-family: "sansbold";
+    
+        
+        
+
+    }
+    .container1{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        flex-wrap: wrap;
+       
+        
+        
+        
+    }
+    .lijevo1{
+        
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .lijevo1 img{
+        height: 150px;
+        width: 220px;
+        margin-bottom: 10px;
+        
+        
+    }
+    .desno1{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;
+        background-color: #B2CBAE;
+        position: relative;
+        
+        
+        
+        
+        
+    }
+    .granulacija1{
+        display: flex;
+         position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .granulacija1 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+       
+    }
+    .granulacija1 ul{
+        list-style-type: none;
+        
+        font-family: "sanswork";
+        padding: 5px;
+        list-style-type: none;
+        columns: 2;
+        margin-top: 20px;
+        margin-left: -80px;
+        column-gap: 100px;
+        font-size: 10px;
+        
+        
+        
+    }
+    .uteg1 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 70px;
+        border-radius: 50px;
+        position: absolute;
+        left: 100px;
+       
+        
+    }
+    .uteg1 img{
+        height: 90px;
+        width: 90px;
+        padding: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun1{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        flex-wrap: wrap;
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun1:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    .desno1 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+    
+        
+    }
+    .desno1 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+        
+    }
+    
+    
+    .imagecont1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+       
+    }
+        
+        
+    
+        
+        
+    
+    
+    .container2{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        flex-wrap: wrap;
+        
+        
+    }
+    .lijevo2{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .lijevo2 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+    }
+    .lijevo2 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija2{
+        display: flex;
+         position: relative;
+        flex-direction: row;
+        
+        
+        
+    }
+    .granulacija2 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+        font-size: 12px;
+       
+    }
+    .granulacija2 ul{
+        list-style-type: none;
+        
+        font-family: "sanswork";
+        padding: 5px;
+        list-style-type: none;
+        columns: 2;
+        margin-top: 20px;
+        margin-left: -80px;
+        column-gap: 100px;
+        font-size: 10px;
+    }
+    .uteg2 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 70px;
+        border-radius: 50px;
+        position: absolute;
+        left: 100px;
+        
+    }
+    .uteg2 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun2{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        top: 60px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun2:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+        
+    .desno2{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .desno2 img{
+        height: 140px;
+        width: 140px;
+        
+    }
+    .imagecont2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+       
+    }
+    .container3{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        
+    }
+    .lijevo3{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .lijevo3 img{
+        height: 100px;
+        width: 220px;
+        
+    }
+    .imagecont3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9ab794;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    .desno3{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    .desno3 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+    }
+    .desno3 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija3{
+        display: flex;
+         position: relative;
+        flex-direction: row;
+        
+        
+        
+    }
+    .granulacija3 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+        font-size: 12px;
+    }
+    .granulacija3 ul{
+        list-style-type: none;
+        padding: 5px;
+        list-style-type: none;
+        columns: 2;
+        margin-top: 20px;
+        margin-left: -80px;
+        column-gap: 100px;
+        font-size: 10px;
+        font-family: "sanswork";
+        
+    }
+    .uteg3 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 70px;
+        border-radius: 50px;
+        position: absolute;
+        left: 100px;
+        
+    }
+    .uteg3 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun3{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun3:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    
+    .container4{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        
+    }
+    .lijevo4{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    .lijevo4 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+    }
+    .lijevo4 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija4{
+        display: flex;
+         position: relative;
+        flex-direction: row;
+        
+        
+        
+    }
+    .granulacija4 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+        font-size: 12px;
+    }
+    .granulacija4 ul{
+        list-style-type: none;
+        padding: 5px;
+        list-style-type: none;
+        columns: 2;
+        margin-top: 20px;
+        margin-left: -80px;
+        column-gap: 100px;
+        font-size: 10px;
+        font-family: "sanswork";
+        
+    }
+    .uteg4 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 70px;
+        border-radius: 50px;
+        position: absolute;
+        left: 100px;
+        
+    }
+    .uteg4 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+        z-index: 10;
+    }
+    .botun4{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun4:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    
+    
+    .desno4{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .desno4 img{
+        height: 150px;
+        width: 200px;
+        margin-bottom: 12px;
+    }
+    .imagecont4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9ab794;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    container5{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        
+    }
+    .lijevo5{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .lijevo5 img{
+        height: 120px;
+        width: 220px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .imagecont5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    .desno5{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    .desno5 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+        
+    }
+    .desno5 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija5{
+        display: flex;
+         position: relative;
+        flex-direction: column;
+        
+        
+        
+    }
+    .granulacija5 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+    }
+    .granulacija5 p:nth-child(2){
+        font-size: 12px;
+        font-family: "sanswork";
+    }
+    .uteg5 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 100px;
+        border-radius: 50px;
+        
+    }
+    .uteg5 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun5{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun5:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    
+    .container6{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+       
+    }
+    .lijevo6{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .lijevo6 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+        
+    }
+    .lijevo6 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija6{
+        display: flex;
+         position: relative;
+        flex-direction: column;
+        
+        
+        
+    }
+    .granulacija6 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+    }
+    .granulacija6 p:nth-child(2){
+        font-size: 12px;
+        font-family: "sanswork";
+    }
+    .uteg6 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 100px;
+        border-radius: 50px;
+        
+    }
+    .uteg6 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun6{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun6:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    .desno6{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .desno6 img{
+        height: 140px;
+        width: 220px;
+        margin-bottom: 5px;
+    }
+    .imagecont6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9ab794;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    .container7{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        
+    }
+    .lijevo7{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .lijevo7 img{
+        height: 120px;
+        width: 200px;
+    }
+    .imagecont7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    .desno7{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    .desno7 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+        
+    }
+    .desno7 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija7{
+        display: flex;
+         position: relative;
+        flex-direction: column;
+        
+        
+        
+    }
+    .granulacija7 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+       
+    }
+    .granulacija7 p:nth-child(2){
+        font-size: 12px;
+        font-family: "sanswork";
+    }
+    .uteg7 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 100px;
+        border-radius: 50px;
+        
+    }
+    .uteg7 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun7{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun7:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    .container8{
+        display: inline-flex;
+        height: 220px;
+        width: 100%;
+        
+    }
+    .lijevo8{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: #B2CBAE;
+        flex-direction: column;
+        position: relative;
+    }
+    .lijevo8 h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: "sansbold";
+        
+    }
+    .lijevo8 h2{
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #464c45;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+    }
+    .granulacija8{
+        display: flex;
+         position: relative;
+        flex-direction: column;
+        
+        
+        
+    }
+    .granulacija8 p{
+        padding: 0;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-family: "sanswork";
+       
+    }
+    .granulacija8 p:nth-child(2){
+        font-size: 12px;
+        font-family: "sanswork";
+    }
+    .uteg8 {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 60px;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 100px;
+        border-radius: 50px;
+        
+    }
+    .uteg8 img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        
+        opacity: 1;
+        z-index: 10;
+        
+        
+    }
+    .botun8{
+        position: absolute;
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        
+        bottom: 10px;
+        left: 20px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .botun8:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+    }
+    
+    .desno8{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .desno8 img{
+        height: 120px;
+        width: 200px;
+    }
+    .imagecont8{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9ab794;
+        border-radius: 100px;
+        height: 160px;
+        width: 160px;
+        align-content: center;
+        overflow: visible;
+    }
+    .formback{
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-color: #9ab794;
+       
+        
+       } 
+       .forma{
+        display: block;
+        width: 30%;
+        height: 420px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px black;
+        flex-wrap: wrap;
+        
+       }
+       #formica{
+        display: flex;
+        flex-direction: column;
+       }
+       input[type = text]{
+        width: 150px;
+        height: 10px;
+        padding: 15px;
+        font-size: 18px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+       }
+       input[type=email]{
+        width: 150px;
+        height: 10px;
+        padding: 15px;
+        font-size: 18px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       input[type=tel]{
+        width: 150px;
+        height: 10px;
+        padding: 15px;
+        font-size: 18px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .text{
+        width: 160px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px black;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .slazemse li{
+        margin-left: 30px;
+        margin-top: 10px;
+       }
+       .slazemse p{
+        margin-left: 30px;
+        margin-top: 0;
+        font-size: 10px;
+    
+       }
+       .form-botun{
+        height: 35px;
+        width: 150px;
+        background-color:#9ab794;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .form-botun:hover{
+        background-color: rgb(161, 99, 76);
+        color: aqua;
+       }
+       footer{
+        text-align: center;
+        color: #9ab794;
+       }
+       footer h2{
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-family: "sansbold";
+        font-weight: bold;
+       }
+       footer ul{
+        list-style-type: none;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 35px;
+        font-family: "sansbold";
+        font-weight: bold;
+       }
+       .logo{
+        height: 100px;
+        width: 150px;
+        float: none;
+       }
+}

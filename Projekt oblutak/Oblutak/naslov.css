@@ -1,0 +1,38 @@
+
+img{
+    height: 400px;
+    width: 50vw;
+    float: right;
+    object-fit: cover;
+}
+header{
+    height: 400px;
+    background-color: white;
+    position: relative;
+    
+    
+}
+ .bottom{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    text-transform: uppercase;
+}
+.bottom h1{
+    color: #B2CBAE;
+    font-family: "sansbold";
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    
+}
+.naslov{
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #9ab794;
+    padding: 30px;
+    font-family: "sansbold";
+
+    
+    
+}

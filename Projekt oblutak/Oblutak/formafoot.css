@@ -1,0 +1,130 @@
+.formback{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #9ab794;
+   
+    
+   } 
+   .forma{
+    display: block;
+    max-width: 35%;
+    height: 420px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    flex-wrap: wrap;
+    
+   }
+   #formica{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+   }
+   input[type = text]{
+    max-width: 350px;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   input[type=email]{
+    max-width: 400px;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   input[type=tel]{
+    max-width: 400px;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .text{
+    max-width: 250px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   .slazemse li{
+    margin-left: 30px;
+    margin-top: 10px;
+   }
+   .slazemse p{
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 12px;
+
+   }
+   .form-botun{
+    height: 40px;
+    width: 150px;
+    background-color:#9ab794;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .form-botun:hover{
+    background-color: rgb(161, 99, 76);
+    color: aqua;
+   }
+   footer{
+    text-align: center;
+    color: #9ab794;
+   }
+   footer h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: "sansbold";
+    font-weight: bold;
+   }
+   footer ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 35px;
+    font-family: "sansbold";
+    font-weight: bold;
+   }
+   .logo{
+    height: 100px;
+    width: 150px;
+    float: none;
+   }
