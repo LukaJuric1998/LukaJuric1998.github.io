@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(234, 225, 225);
+            margin: 0;
+        }
         .first{
             display: flex;
             max-width: 100%;
@@ -59,13 +63,15 @@
             
         }
         .second{
-            width: 100%;
+            max-width: 100%;
             height: auto;
             background-color: rgb(113, 100, 100);
-            display: inline-flex;
+            display: flex;
             gap: 30px;
-            align-items: center;
+            align-content: center ;
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
             
             
         }
@@ -78,11 +84,191 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             
         }
+        .main{
+            display: flex;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 30px;
+            background-color: rgb(81, 77, 77);
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            border-radius: 60px;
+        }
+        .ponuda{
+            max-width: 100%;
+            height: auto;
+            display: flex;
+             margin-top: 10px;
+           
+        }
+        .prvaPonuda{
+            max-width: 50%;
+            height: auto;
+            display: flex;
+             box-sizing: border-box;
+           
+            
+
+        }
+        .prvaPonuda img{
+            width: 800px;
+            height: 400px;
+            object-fit: cover;
+        }
+    
+        .drugaPonuda{
+            display: flex;
+            max-width: 50%;
+            height: auto;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        .drugaPonuda img{
+            width: 800px;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        
+        .botuni{
+            margin-top: 20px;
+            max-width: 100%;
+            display: flex;
+            gap: 600px;
+            align-items: center;
+            justify-content: center;
+        }
+        .botun{
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            background-color: rgb(37, 35, 35);
+            text-transform: uppercase;
+            transform: transform 0.5s ease-in;
+        }
+        .botun:hover{
+            cursor: pointer;
+            color: rgb(37, 35, 35);
+            background-color: white;
+            transition: 0.5s ease-in;
+        }
+        .Popust{
+             display: flex;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 30px;
+            background-color: rgb(81, 77, 77);
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            border-radius: 60px;
+        }
+        .odjeca{
+            display: flex;
+            max-width: 100%;
+            height: auto;
+            justify-content: center;
+            align-content: center;
+            gap: 100px;
+        }
+        .snizenje{
+            margin-top: 20px;
+            background-color: rgb(81, 77, 77);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .snizenje img{
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .snizenje p{
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            font-family: cursive;
+        }
+        .snizenje button{
+             width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            background-color: rgb(37, 35, 35);
+            text-transform: uppercase;
+            transform: transform 0.5s ease-in;
+        }
+        .snizenje button:hover{
+             cursor: pointer;
+            color: rgb(37, 35, 35);
+            background-color: white;
+            transition: 0.5s ease-in;
+        }
+        .popularno{
+            display: flex;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 30px;
+            background-color: rgb(81, 77, 77);
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            border-radius: 60px;
+        }
+        .trend{
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: flex;
+            gap: 50px;
+        }
+        .beste{
+             margin-top: 10px;
+            background-color: rgb(81, 77, 77);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 20%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .beste img{
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .beste p{
+             margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            font-family: cursive;
+        }
         
 
         
     </style>
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -104,16 +290,88 @@
             <li>Jakete</li>
             <li>Cipele</li>
             <li>Jeans</li>
-            <li>Haljine</li>
+            <li>Sunčane naočale</li>
         </div>
-
+        
 
     </header>
 
     <main>
-    <h1> Dobrodošli na moj webshop</h1>
-    <img src="Slike/no-revisions-kWVImL5QxJI-unsplash.jpg" width="200" height="200">
-    <img src="Slike/anomaly-WWesmHEgXDs-unsplash.jpg" width="200" height="200">
+    <div class="main">
+        <h1> Novo u ponudi!</h1>
+    </div>
+    <div class="ponuda">
+        <div class="prvaPonuda">
+            <img src="Slike/anomaly-WWesmHEgXDs-unsplash.jpg" >
+            
+        </div>
+        <div class="drugaPonuda">
+            <img src="Slike/alicia-petresc-BciCcl8tjVU-unsplash.jpg">
+            
+        </div>
+        
+    </div>
+    <div class="botuni">
+    <button class="botun">Kupi</button>
+    <button class="botun">Kupi</button>
+        </div>
+    <div class="Popust">
+        <h1>Posebni popusti do 20%</h1>
+    </div>
+    <div class="odjeca">
+        <div class="snizenje">
+            <img src="Slike/carlos-torres-fouVDmGXoPI-unsplash.jpg" >
+            <p> Nove košulje</p>
+            <p> Nova cijena:19,99 €</p>
+            <button>Kupi</button>
+            
+        </div>
+        <div class="snizenje">
+            <img src="Slike/felipepelaquim-6zO5VKogoZE-unsplash.jpg" >
+            <p>New balance patike</p>
+            <p>Nova cijena:59,99 €</p>
+            <button>Kupi</button>
+        </div>
+        <div class="snizenje">
+            <img src="Slike/domino-studio-164_6wVEHfI-unsplash.jpg" >
+            <p> Nike patike</p>
+            <p>Nova cijena:69,99 €</p>
+            <button>Kupi</button>
+        </div>
+    </div>
+
+    <div class="popularno">
+        <h1>Naši najpopularniji proizvodi</h1>
+    </div>
+    <div class="trend">
+        <div class="beste">
+            <img src="Slike/klaudia-piaskowska-Zy6oNZRdcjc-unsplash.jpg" width="200" height="200">
+            <p> Traperice</p>
+            <p> Cijena: 49,99 €</p>
+            <button>Kupi</button>
+        </div>
+        <div class="beste">
+            <img src="Slike/alex-haigh-fEt6Wd4t4j0-unsplash.jpg" width="200" height="200">
+            <p> Majica kratkih rukava</p>
+            <p> Cijena: 9,99 €</p>
+            <button>Kupi</button>
+        </div>
+        <div class="beste">
+            <img src="Slike/arno-senoner-oCXVxwTFwqE-unsplash.jpg" width="200" height="200">
+            <p> Borša</p>
+            <p> Cijena: 149,99 €</p>
+            <button>Kupi</button>
+        </div>
+        <div class="beste">
+            <img src="Slike/micheile-henderson-FpPcoOAk5PI-unsplash.jpg" width="200" height="200">
+            <p> Bluza</p>
+            <p> Cijena: 19,99 €</p>
+            <button>Kupi</button>
+        </div>
+    </div>
+    
+        
+    
 
 
 
