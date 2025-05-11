@@ -6,15 +6,80 @@
     <title>Document</title>
     <style>
         .first{
+            display: flex;
             max-width: 100%;
             height: auto;
-            background-color: rgb(65, 33, 33);
+            background-color: rgb(87, 69, 69);
         }
+        .first img{
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 80px;
+            padding: 20px;
+        }
+        .search{
+            display: flex;
+            align-items:center;
+            width: 500px;
+            margin: 20px auto;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+        }
+        .input{
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            border-radius: 20px;
+            
+        }
+        .searchButton{
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .ikone{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            gap: 60px;
+        }
+        .fa-solid{
+            color: white;
+            font-size: 24px;
+            text-shadow: 1px 1px 6px black;
+            
+            
+        }
+        
+
+        
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="first">
+        <div class="first"> 
+            <img src="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg">
+            <div class="search">
+                <input type="text" placeholder="Pretraži" class="input">
+                <button class="searchButton">Pretraži</button>
+            </div>
+            <div class="ikone">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        </div>
+        <div>
 
         </div>
 
