@@ -1,5 +1,6 @@
 body{
             background-color: rgb(234, 225, 225);
+            padding: 20px;
             margin: 0;
         }
         .first{
@@ -77,6 +78,15 @@ body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             
         }
+        .second li a{
+            color: white;
+            text-decoration: none;
+
+        }
+        .second li a:hover{
+            color: rgb(36, 35, 35);
+            cursor: pointer;
+        }
         .main{
             display: flex;
             max-width: 100%;
@@ -87,9 +97,10 @@ body{
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: white;
-            border-radius: 60px;
+            
+            
         }
+        
         .ponuda{
             max-width: 100%;
             height: auto;
@@ -162,8 +173,7 @@ body{
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: white;
-            border-radius: 60px;
+            
         }
         .odjeca{
             display: flex;
@@ -224,8 +234,7 @@ body{
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: white;
-            border-radius: 60px;
+            
         }
         .trend{
             max-width: 100%;
