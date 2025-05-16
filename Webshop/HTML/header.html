@@ -99,6 +99,70 @@
             color: rgb(36, 35, 35);
             cursor: pointer;
         }
+        .hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .second {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(113, 100, 100);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 10px 0;
+    }
+
+    .second ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .second li {
+        font-size: 20px;
+    }
+
+    .second.active {
+        display: flex;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .ikone {
+        gap: 20px;
+        padding: 15px;
+    }
+}
         </style>
      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -106,6 +170,7 @@
 <body>
      <header id="header">
         <div class="first"> 
+
            <a href="index.html"><img src="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg" width="100" height="100"></a> 
             <div class="search">
                 <input type="text" placeholder="Pretraži" class="input">
@@ -117,15 +182,30 @@
             <i class="fa-solid fa-circle-info"></i>
         </div>
         </div>
+        <button class="hamburger" aria-label="Toggle menu">
+    <i class="fa-solid fa-bars"></i>
+</button>
         <div class="second">
+    
+        
             <li><a href="majice.html">Majice</a></li>
             <li><a href="jakne.html">Jakne</a></li>
             <li><a href="cipele.html">Cipele</a></li>
             <li><a href="hlace.html">Hlače</a></li>
             <li><a href="cvike.html">Sunčane naočale</a></li>
-        </div>
+        
+    
+</div>
         
 
     </header>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
