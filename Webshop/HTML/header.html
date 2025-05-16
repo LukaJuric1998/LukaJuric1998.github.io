@@ -5,86 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <style>
-         body{
-            background-color: rgb(234, 225, 225);
-            padding: 20px;
-            margin: 0;
-        }
-        .first{
-            display: flex;
-            max-width: 100%;
-            height: auto;
-            background-color: rgb(87, 69, 69);
-            justify-content: space-between;
-        }
-        .first h1{
-            font-size: 48px;
-            font-family: cursive;
-            text-transform: uppercase;
-            padding: 10px;
-        }
-        .first img{
-            
-            width: 130px;
-            height: 130px;
-            border-radius: 80px;
-            padding: 10px;
-        }
-        
-        .ikone{
-            display: flex;
-            align-items: center;
-            padding: 30px;
-            gap: 60px;
-        }
-        .fa-solid{
-            color: white;
-            font-size: 24px;
-            text-shadow: 1px 1px 6px black;
-            transition: transform 0.5s ease-in;
-            
-            
-        }
-        .fa-solid:hover{
-            color: rgb(233, 233, 26);
-            transform: rotate(720deg);
-        }
-        .second{
-            max-width: 100%;
-            height: auto;
-            background-color: rgb(113, 100, 100);
-            display: flex;
-            gap: 30px;
-            align-content: center ;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            
-            
-        }
-        .second li{
-            list-style-type: none;
-            font-size: 32px;
-            text-align: center;
-            text-transform: uppercase;
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            
-        }
-        .second li a{
-            color: white;
-            text-decoration: none;
-
-        }
-        .second li a:hover{
-            color: rgb(36, 35, 35);
-            cursor: pointer;
-        }
-
+       
+    
 
 
         </style>
-     
+      <link rel="stylesheet" href="CSS/header.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -96,11 +22,15 @@
             <div class="ikone">
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-bag-shopping"></i>
-            <i class="fa-solid fa-circle-info"></i>
-        </div>
-        </div>
+           <a href="kontakt.html"><i class="fa-solid fa-circle-info"></i></a>
+        </div>  
         
-        <div class="second">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        </div>
+       
+  
+        <div class="second" id="second">
     
         
             <li><a href="majice.html">Majice</a></li>
@@ -108,12 +38,21 @@
             <li><a href="cipele.html">Cipele</a></li>
             <li><a href="hlace.html">Hlače</a></li>
             <li><a href="cvike.html">Sunčane naočale</a></li>
-        
+       </div>
     
-</div>
+
         
 
     </header>
-   
+   <script>
+    function toggleMenu() {
+      document.getElementById("second").classList.toggle("active");
+      document.querySelectorAll('#second a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("second").classList.remove("active");
+  });
+});
+    }
+  </script>
 </body>
 </html>

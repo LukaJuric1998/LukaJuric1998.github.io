@@ -12,3 +12,13 @@ window.addEventListener("DOMContentLoaded", () => {
     xhttp.open("GET", "header.html", true);
     xhttp.send();
 });
+
+
+ function toggleMenu() {
+      document.getElementById("second").classList.toggle("active");
+      document.querySelectorAll('#second a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("second").classList.remove("active");
+  });
+});
+    }
