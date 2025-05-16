@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+
+    .Kontakt{
+          max-width: 100%;
+            height: auto;
+            display: block;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+           background-color: rgb(70, 68, 68);
+    }
+    .Kontakt h1{
+         font-family: cursive;
+            text-transform: uppercase;
+            font-size: 36px;
+            text-align: center;
+            text-spacing-trim: 10px;
+    }
+    .Kontakt h2{
+        
+         font-family: cursive;
+            text-transform: uppercase;
+            font-size: 24px;
+            text-align: center;
+            text-spacing-trim: 10px;
+    }
+        .formback{
+    margin-top: 20px;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    
+   
+    
+   } 
+   .forma{
+    margin-bottom: 20px;
+    display: block;
+    max-width: 45%;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    flex-wrap: wrap;
+    
+   }
+   #formica{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+   }
+   input[type = text]{
+    max-width: 80%;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   input[type=email]{
+    max-width: 80%;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   input[type=tel]{
+    max-width: 80%;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .text{
+    max-width: 80%;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   .slazemse li{
+    margin-left: 30px;
+    margin-top: 10px;
+   }
+   .slazemse p{
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 12px;
+
+   }
+   .form-botun{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .form-botun:hover{
+    background-color:white;
+    color: rgb(70, 68, 68);
+   }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+     <script src="header.js"></script>
+     <main>
+        <div class="Kontakt">
+            <h1>Kako nas kontaktirati?</h1>
+            <h2>Popunite ovaj obrazac</h2>
+        </div>
+        <div class="formback">
+        <div class="forma">
+            <form id="formica">
+                <input type="text" id="imeprezime" name="ime" placeholder="Ime i prezime">
+                <input type="email" id="mail" name="email" placeholder="E-mail">
+                <input type="tel" id="telefon" name="telefon" placeholder="Telefon">
+                <textarea class="text" id="area" name="area" rows="3" cols="80" placeholder="Poruka" maxlength="150"></textarea>
+
+    
+               
+                <div class="slazemse">
+
+                    <li style="list-style-type: none;"><input type="checkbox" value="check" name="slazemse">Slažem se </li>
+                    <p>Korištenjem ovog obrasca prihvaćate prikupljanje i obradu osobnih podataka danih u obrascu bez kojih vaš zahtjev u obrascu ne može biti ispunjen</p>
+                  </div> 
+                  
+                    <button type="submit" class="form-botun"> Pošalji upit </button>
+     </main>
+      <footer id="footer"></footer>
+     <script src="footer.js"></script>
+</body>
+</html>
