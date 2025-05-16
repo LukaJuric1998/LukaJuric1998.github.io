@@ -3,34 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Document</title>
     <style>
-
-    .Kontakt{
-          max-width: 100%;
-            height: auto;
-            display: block;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 20px;
-           background-color: rgb(70, 68, 68);
-    }
-    .Kontakt h1{
-         font-family: cursive;
-            text-transform: uppercase;
-            font-size: 36px;
-            text-align: center;
-            text-spacing-trim: 10px;
-    }
-    .Kontakt h2{
-        
-         font-family: cursive;
-            text-transform: uppercase;
-            font-size: 24px;
-            text-align: center;
-            text-spacing-trim: 10px;
-    }
-        .formback{
+     .formback{
     margin-top: 20px;
     display: flex;
     max-width: 100%;
@@ -139,6 +114,32 @@
     background-color:white;
     color: rgb(70, 68, 68);
    }
+   .signin{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+           background-color: rgb(70, 68, 68)
+   }
+   .signin h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: cursive;
+    text-align: center;
+    
+   }
+   .signin p{
+    font-size: 1rem;
+    font-family: cursive;
+    text-align: center;
+   }
+   span{
+    padding: 10px;
+    font-size: 12px;
+    font-family: cursive;
+   }
     </style>
     <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg">
 </head>
@@ -146,11 +147,12 @@
     <header id="header"></header>
      <script src="header.js"></script>
      <main>
-        <div class="Kontakt">
-            <h1>Kako nas kontaktirati?</h1>
-            <h2>Popunite ovaj obrazac</h2>
-        </div>
-        <div class="formback">
+    <div class="signin">
+        <h2>Prijavite se i možda dobijete posebne pogodnosti</h2>
+        <p>Kupnjom 10 proizvoda dobijete sladoled gratis</p>
+       
+    </div>
+     <div class="formback">
         <div class="forma">
             <form id="formica">
                 <input type="text" id="imeprezime" name="ime" placeholder="Ime i prezime">
@@ -169,9 +171,11 @@
                     <button type="submit" class="form-botun"> Pošalji upit </button>
                     </form>
                     </div>
-          </div>
-     </main>
-      <footer id="footer"></footer>
+          </div><br>
+          <span>Napomena: Svaki proizvod mora biti više od 50€</span>
+          
+        </main>
+         <footer id="footer"></footer>
      <script src="footer.js"></script>
 </body>
 </html>
