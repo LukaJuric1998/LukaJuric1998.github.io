@@ -16,7 +16,7 @@
       background-color:  rgb(70, 68, 68);
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 1px 2px 10px black;
       text-align: center;
     }
 
@@ -71,7 +71,7 @@
 
 <div id="proizvod" class="proizvod">
   <p>Učitavanje proizvoda...</p>
-  <button>Dodaj u košaricu</button>
+  <button onclick="dodajKosaricu()">Dodaj u košaricu</button>
 </div>
 
 
@@ -100,7 +100,7 @@ fetch('proizvodi.json')
         <p><strong>Cijena:</strong> ${proizvod.cijena}</p>
         <p><strong>Dostupne veličine:</strong> ${proizvod.velicine}</p>
         <p>${proizvod.opis}</p>
-        <button onclick="dodajUKosaricu(${proizvod.id})">Dodaj u košaricu</button>
+        <button onclick="dodajKosaricu(${proizvod.id})">Dodaj u košaricu</button>
       `;
     } else {
       container.innerHTML = '<p>Proizvod nije pronađen.</p>';
@@ -110,6 +110,24 @@ fetch('proizvodi.json')
     console.error(error);
     container.innerHTML = '<p>Došlo je do greške pri učitavanju podataka.</p>';
   });
+function dodajKosaricu(id) {
+  fetch('proizvodi.json')
+    .then(res => res.json())
+    .then(data => {
+      const proizvod = data.find(p => p.id === id);
+      if (proizvod) {
+        // Osiguraj da cijena bude broj
+        proizvod.cijena = parseFloat(proizvod.cijena);
+
+        let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
+        kosarica.push(proizvod);
+        localStorage.setItem("kosarica", JSON.stringify(kosarica));
+
+        alert(`${proizvod.naziv} je dodan u košaricu.`);
+      }
+    })
+    .catch(err => console.error("Greška prilikom dodavanja u košaricu:", err));
+}
 </script>
  
 
