@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalji proizvoda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .proizvod {
+      max-width: 600px;
+      margin: auto;
+      background-color:  rgb(70, 68, 68);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .proizvod img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .proizvod h2 {
+      margin-top: 20px;
+      font-size: 24px;
+      font-family: cursive;
+      color: white;
+    }
+
+    .proizvod p {
+      font-size: 18px;
+      margin: 10px 0;
+      font-family: cursive;
+      color: white;
+    }
+
+    .proizvod button {
+             width: 150px;
+            height: 70px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            background-color: rgb(37, 35, 35);
+            text-transform: uppercase;
+            transform: transform 0.5s ease-in;
+    }
+
+    .proizvod button:hover {
+            cursor: pointer;
+            color: rgb(37, 35, 35);
+            background-color: white;
+            transition: 0.5s ease-in;
+    }
+  </style>
+</head>
+<body>
+
+<div id="proizvod" class="proizvod">
+  <p>Učitavanje proizvoda...</p>
+  <button>Dodaj u košaricu</button>
+</div>
+
+
+<script>
+// Dohvat ID-a iz URL-a
+function getParam(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+const id = parseInt(getParam('id')); // npr. ?id=1
+const container = document.getElementById('proizvod');
+
+// Učitavanje proizvoda iz JSON fajla
+fetch('proizvodi.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Greška pri učitavanju JSON-a');
+    return response.json();
+  })
+  .then(podaci => {
+    const proizvod = podaci.find(p => p.id === id);
+
+    if (proizvod) {
+      container.innerHTML = `
+        <h1>${proizvod.naziv}</h1>
+        <img src="${proizvod.slika}" alt="${proizvod.naziv}" style="max-width:400px;">
+        <p><strong>Cijena:</strong> ${proizvod.cijena}</p>
+        <p><strong>Dostupne veličine:</strong> ${proizvod.velicine}</p>
+        <p>${proizvod.opis}</p>
+        <button onclick="dodajUKosaricu(${proizvod.id})">Dodaj u košaricu</button>
+      `;
+    } else {
+      container.innerHTML = '<p>Proizvod nije pronađen.</p>';
+    }
+  })
+  .catch(error => {
+    console.error(error);
+    container.innerHTML = '<p>Došlo je do greške pri učitavanju podataka.</p>';
+  });
+</script>
+ 
+
+</body>
+</html>
+
