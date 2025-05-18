@@ -6,24 +6,28 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: antiquewhite;
       padding: 20px;
     }
 
     .proizvod {
-      max-width: 600px;
-      margin: auto;
-      background-color:  rgb(70, 68, 68);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 1px 2px 10px black;
-      text-align: center;
+           background-color: rgb(81, 77, 77);
+            border-radius: 8px;
+            width: 500px;
+            color: white;
+            text-align: center;
+            box-shadow: 2px 2px 10px black;
+            margin: auto;
+            height: 520px;
+      
     }
 
     .proizvod img {
       width: 100%;
-      border-radius: 10px;
+      height: auto;
+      border-radius: 8px;
       object-fit: cover;
+      
     }
 
     .proizvod h2 {
@@ -45,12 +49,14 @@
             height: 70px;
             font-size: 20px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            border-radius: 4px;
+            border-radius: 8px;
             border: none;
             color: white;
             background-color: rgb(37, 35, 35);
             text-transform: uppercase;
             transform: transform 0.5s ease-in;
+            margin-top: 10px;
+            
     }
 
     .proizvod button:hover {
@@ -65,26 +71,43 @@
       color: white;
       text-transform: uppercase;
     }
+    #velicina{
+      
+      font-size: 18px;
+      font-family: cursive;
+      color: white;
+      background-color:  rgb(37, 35, 35);;
+    }
+     label{
+      
+      font-size: 18px;
+      color: white;
+      font-family: cursive;
+      margin-top: 10px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
+   <header id="header"></header>
+     <script src="header.js"></script>
+<main>
 <div id="proizvod" class="proizvod">
   <p>Učitavanje proizvoda...</p>
   <button onclick="dodajKosaricu()">Dodaj u košaricu</button>
 </div>
-
-
+</main>
+<footer id="footer"></footer>
+     <script src="footer.js"></script>
 <script>
 // Dohvat ID-a iz URL-a
 function getParam(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-const id = parseInt(getParam('id')); // npr. ?id=1
+const id = parseInt(getParam('id'));
 const container = document.getElementById('proizvod');
 
-// Učitavanje proizvoda iz JSON fajla
 fetch('proizvodi.json')
   .then(response => {
     if (!response.ok) throw new Error('Greška pri učitavanju JSON-a');
@@ -98,8 +121,11 @@ fetch('proizvodi.json')
         <h1>${proizvod.naziv}</h1>
         <img src="${proizvod.slika}" alt="${proizvod.naziv}" style="max-width:400px;">
         <p><strong>Cijena:</strong> ${proizvod.cijena}</p>
-        <p><strong>Dostupne veličine:</strong> ${proizvod.velicine}</p>
-        <p>${proizvod.opis}</p>
+        <label for="velicina"><strong>Odaberite veličinu:</strong></label>
+        <select id="velicina">
+          <option value="">-- Odaberi --</option>
+          ${proizvod.velicine.map(v => `<option value="${v}">${v}</option>`).join('')}
+        </select><br>
         <button onclick="dodajKosaricu(${proizvod.id})">Dodaj u košaricu</button>
       `;
     } else {
@@ -110,24 +136,51 @@ fetch('proizvodi.json')
     console.error(error);
     container.innerHTML = '<p>Došlo je do greške pri učitavanju podataka.</p>';
   });
-function dodajKosaricu(id) {
+
+  function dodajKosaricu(idProizvoda) {
+  const selectVelicina = document.getElementById("velicina");
+  const odabranaVelicina = selectVelicina?.value;
+
+  if (!odabranaVelicina) {
+    alert("Molimo odaberite veličinu!");
+    return;
+  }
+
   fetch('proizvodi.json')
     .then(res => res.json())
     .then(data => {
-      const proizvod = data.find(p => p.id === id);
-      if (proizvod) {
-        // Osiguraj da cijena bude broj
-        proizvod.cijena = parseFloat(proizvod.cijena);
-
-        let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
-        kosarica.push(proizvod);
-        localStorage.setItem("kosarica", JSON.stringify(kosarica));
-
-        alert(`${proizvod.naziv} je dodan u košaricu.`);
+      const proizvod = data.find(p => p.id === idProizvoda);
+      if (!proizvod) {
+        alert("Proizvod nije pronađen.");
+        return;
       }
+
+      const cijenaBroj = parseFloat(proizvod.cijena.replace('€', '').trim().replace(',', '.'));
+
+      const proizvodZaKosaricu = {
+        id: proizvod.id,
+        naziv: proizvod.naziv,
+        cijena: cijenaBroj,
+        slika: proizvod.slika,
+        odabranaVelicina: odabranaVelicina
+      };
+
+      let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
+      kosarica.push(proizvodZaKosaricu);
+      localStorage.setItem("kosarica", JSON.stringify(kosarica));
+
+      alert(`${proizvod.naziv} (${odabranaVelicina}) je dodan u košaricu.`);
     })
-    .catch(err => console.error("Greška prilikom dodavanja u košaricu:", err));
+    .catch(err => {
+      console.error("Greška prilikom dodavanja u košaricu:", err);
+      alert("Došlo je do greške.");
+    });
 }
+
+
+  
+
+
 </script>
  
 

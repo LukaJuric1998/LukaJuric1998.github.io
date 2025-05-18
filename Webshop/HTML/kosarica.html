@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Košarica</title>
     <style>
          body {
-            background-color: rgb(234, 225, 225);
+            background-color: antiquewhite;
             padding: 20px;
             margin: 0;
-            font-family: Arial, sans-serif;
+            
         }
         h1 {
             text-transform: uppercase;
@@ -35,7 +35,7 @@
         }
         .kosarica-proizvod img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: contain;
             border-radius: 5px;
         }
@@ -52,7 +52,7 @@
         .ukloni-btn {
             margin-top: 10px;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 20px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', cursive;
             background-color: rgb(37, 35, 35);
             color: white;
@@ -72,14 +72,22 @@
             font-size: 24px;
             font-weight: bold;
             font-family: cursive;
+            background-color: rgb(37, 35, 35);
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    
+    <header id="header"></header>
+     <script src="header.js"></script>
+     <main>
     <h1>Vaša košarica</h1>
     <div id="kosarica-container"></div>
     <p id="ukupno">Ukupno: 0.00 €</p>
+    </main>
+    <footer id="footer"></footer>
+     <script src="footer.js"></script>
 
 <script>
     // Učitavanje košarice iz localStorage
@@ -103,6 +111,7 @@
                 <img src="${proizvod.slika}" alt="${proizvod.naziv}">
                 <h3>${proizvod.naziv}</h3>
                 <p>Cijena: ${parseFloat(proizvod.cijena).toFixed(2)} €</p>
+                <p>Veličina: ${proizvod.odabranaVelicina}</p>
                 <button class="ukloni-btn" onclick="ukloniIzKosarice(${index})">Ukloni</button>
             `;
 

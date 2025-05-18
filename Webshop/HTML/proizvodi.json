@@ -315,6 +315,7 @@
     "id": 40,
     "naziv": "Zlatne naočale",
     "cijena": "209.99 €",
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
     "slika": "Slike/cvike1.jpg",
     "opis": "Elegantne zlatne naočale za sofisticiran izgled."
   },
@@ -322,6 +323,7 @@
     "id": 41,
     "naziv": "Crne sunčane naočale",
     "cijena": "239,99 €",
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
      "slika": "Slike/cvike2.jpg",
     "opis": "Klasične crne sunčane naočale sa UV zaštitom."
    
@@ -330,6 +332,7 @@
     "id": 42,
     "naziv": "Ray Ban",
     "cijena": "249.99 €",
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
     "slika": "Slike/cvike3.jpg",
     "opis": "Popularne Ray Ban sunčane naočale originalnog dizajna."
   },
@@ -337,6 +340,7 @@
     "id": 43,
     "naziv": "Bijele naočale",
     "cijena": "189.99 €",
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
     "slika": "Slike/cvike4.jpg",
     "opis": "Moderne bijele naočale koje pristaju svakom outfitu."
   },
@@ -344,7 +348,7 @@
     "id": 44,
     "naziv": "Aviators",
     "cijena": "249.99 €",
-    
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
     "slika": "Slike/cvike5.jpg",
     "opis": "Ikonični aviator stil naočala za klasičan izgled."
   },
@@ -352,6 +356,7 @@
     "id": 45,
     "naziv": "Oakley",
     "cijena": "279.99 €",
+    "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
     "slika": "Slike/cvike6.jpg",
     "opis": "Sportske Oakley naočale vrhunskih performansi."
     
