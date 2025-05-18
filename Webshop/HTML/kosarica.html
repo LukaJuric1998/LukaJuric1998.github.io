@@ -11,11 +11,14 @@
             margin: 0;
             
         }
-        h1 {
+        .h1 {
             text-transform: uppercase;
             font-family: cursive;
             font-size: 30px;
             text-align: center;
+            background-color: rgb(37, 35, 35);
+            padding: 20px;
+            color: white;
         }
         #kosarica-container {
             display: flex;
@@ -60,7 +63,7 @@
             border-radius: 4px;
             cursor: pointer;
             text-transform: uppercase;
-            transition: background-color 0.5s, color 0.5s;
+            transition: background-color 0.5s, color 0.5s,transform 0.5s ease;
         }
         .ukloni-btn:hover {
             background-color: white;
@@ -76,15 +79,47 @@
             color: white;
             padding: 20px;
         }
+        .checkout{
+            display: flex;
+            justify-content:center;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+        .botuni{
+             margin-top: 10px;
+            padding: 20px;
+            font-size: 20px;
+            font-family:  cursive;
+            background-color: rgb(37, 35, 35);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.5s, color 0.5s,transform 0.5s ease;
+            text-decoration: none;
+        }
+        .botuni:hover{
+            color: rgb(37, 35, 35);
+            background-color: white;
+        }
+        
     </style>
+    <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg">
 </head>
 <body>
     <header id="header"></header>
      <script src="header.js"></script>
      <main>
-    <h1>Vaša košarica</h1>
+    <h1 class="h1">Vaša košarica</h1>
     <div id="kosarica-container"></div>
     <p id="ukupno">Ukupno: 0.00 €</p>
+    <div class="checkout">
+    <a href="index.html" class="botuni">Povratak na naslovnu</a>
+    <a href="checkout.html"class="botuni">Checkout</a> 
+
+</div>
     </main>
     <footer id="footer"></footer>
      <script src="footer.js"></script>

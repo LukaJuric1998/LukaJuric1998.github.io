@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title><style>
+        body{
+            margin: 0;
+            background-color: antiquewhite;
+        }
+        .metode{
+            margin-top: 50px;
+            max-width: 30%;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color:  rgb(81, 77, 77);
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 10px;
+        }
+        .metode h2{
+            font-family: cursive;
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+        }
+        label{
+            font-size: 22px;
+            padding: 10px;
+            font-family: cursive;
+            color: white;
+        }
+        .Odaberi{
+             margin-top: 10px;
+            padding: 20px;
+            font-size: 20px;
+            font-family:  cursive;
+            background-color: rgb(37, 35, 35);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.5s, color 0.5s,transform 0.5s ease;
+        }
+        .Odaberi:hover{
+            color: rgb(37, 35, 35);
+            background-color: white;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg">
+</head>
+<body>
+    <div class="metode">
+        <h2>Odaberite metodu plačanja</h2>
+        <label>
+    <input type="radio" name="placanje" value="kartica" checked>
+    Visa <i class="fa-brands fa-cc-visa"></i>
+  </label>
+
+  <label>
+    <input type="radio" name="placanje" value="pouzece">
+    MasterCard <i class="fa-brands fa-cc-mastercard"></i>
+  </label>
+
+  <label>
+    <input type="radio" name="placanje" value="paypal">
+    PayPal <i class="fa-brands fa-paypal"></i>
+  </label>
+  <label>
+    <input type="radio" name="placanje" value="zlato">
+    Zlato <i class="fa-solid fa-coins"></i>
+  </label>
+  <button class="Odaberi">Odaberi</button>
+    </div>
+    
+</body>
+</html>
