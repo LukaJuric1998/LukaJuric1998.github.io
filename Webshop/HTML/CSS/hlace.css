@@ -2,6 +2,8 @@
             background-color: rgb(234, 225, 225);
             padding: 20px;
             margin: 0;
+             background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
         }
 
         .gace{
@@ -13,9 +15,10 @@
             margin-top: 20px;     
                 }
         .gace h1{
-            font-size: 30px;
-            font-family: cursive;
+            font-size: 32px;
+            font-family: "caveat";
             text-transform: uppercase;
+            color: white;
         }
         .hose1{
             display: flex;
@@ -42,9 +45,9 @@
         .pants1 p{
             margin-top: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .pants1 button{
              width: 100px;
@@ -73,9 +76,10 @@
             margin-top: 20px;  
         }
         .novegace h1{
-             font-size: 30px;
-            font-family: cursive;
+             font-size: 32px;
+            font-family: "caveat";
             text-transform: uppercase;
+            color: white;
         }
         .hose2{
              display: flex;
@@ -102,9 +106,9 @@
         .pants2 p{
             margin-top: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .pants2 button{
              width: 100px;

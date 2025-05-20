@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .eins{
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background-color: blueviolet;
+            display: flex;
+            position: relative;
+            transition: transform 1s ease;
+            transition-timing-function:  ease;
+        }
+        .min1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 60px;
+            position: absolute;
+            left: 0;
+            transition: left 1s ease;
+            
+        }
+        .eins:hover .min1{
+            left: 25%;
+            
+            
+        }
+        .zwei{
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background-color: blueviolet;
+            display: flex;
+            position: relative;
+            transition: transform 1s ease-in;
+            transition-timing-function: ease-in;
+        }
+        .min2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 60px;
+            position: absolute;
+            left: 0;
+            transition: left 1.5s ease-in;
+        }
+        .zwei:hover .min2{
+            left: 45%;
+        }
+        .drei{
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background-color: blueviolet;
+            display: flex;
+            position: relative;
+            transition: transform 2s linear;
+            transition-timing-function: linear;
+            
+        }
+        .min3{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 60px;
+            position: absolute;
+            left: 0;
+            transition: left 2s linear;
+        }
+        .drei:hover .min3{
+            left: 65%;
+        }
+        .vier{
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background-color: blueviolet;
+            display: flex;
+            position: relative;
+            transition: transform 1s ease-in;
+            transition-timing-function: ease-in;
+            
+        }
+        .min4{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 60px;
+            position: absolute;
+            
+            left: 0;
+            transition: left 2s ease-out;
+        }
+        .vier:hover .min4{
+            left: 93%;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="eins">
+        <div class="min1"></div>
+    </div>
+    <div class="zwei">
+        <div class="min2"></div>
+    </div>
+    <div class="drei">
+        <div class="min3"></div>
+    </div>
+    <div class="vier">
+
+        <div class="min4">
+
+        </div>
+    </div>
+</body>
+</html>

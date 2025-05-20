@@ -1,3 +1,13 @@
+ body{
+            background-color: rgb(234, 225, 225);
+            padding: 20px;
+            margin: 0;
+            background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+}
+ 
+ 
+ 
  .Jakete{
             display: flex;
             background-color: rgb(70, 68, 68);
@@ -7,9 +17,10 @@
             margin-top: 20px;     
                 }
         .Jakete h1{
-            font-size: 30px;
-            font-family: cursive;
+            font-size: 32px;
+            font-family: "caveat";
             text-transform: uppercase;
+            color: white;
         }
         .prvired{
               display: flex;
@@ -35,9 +46,9 @@
         .jacket1 p{
             margin-top: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .jacket1 button{
              width: 100px;
@@ -66,9 +77,10 @@
             margin-top: 20px;  
         }
         .novejakne h1{
-             font-size: 30px;
-            font-family: cursive;
+             font-size: 32px;
+            font-family: "caveat";
             text-transform: uppercase;
+            color: white;
         }
         .drugired{
                display: flex;
@@ -94,9 +106,9 @@
         .jacket2 p{
             margin-top: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .jacket2 button{
              width: 100px;
