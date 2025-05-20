@@ -4,14 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
+    margin: 0;
+    padding: 0;
+    background-color: #b7bec9; /* Light grey-blue */
+    color: #0b0b0b;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 40px auto; /* More top/bottom margin */
+    padding: 30px;
+    background-color: #e2d6d6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 8px; /* Rounded corners for container */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #082c53; /* Accent color for main heading */
+    font-size: 2.5em;
+}
+
+main h2 {
+    color: #1c65af; /* Darker grey for subheadings */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    background-color: #f8f9fa; /* Very light grey for items */
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.2);
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #0056b3; /* Darker blue for links */
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block; /* Make the whole item clickable area (almost) */
+}
+
+.project-item a:hover {
+    color: #003875; /* Even darker on hover */
+    
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #6c757d; /* Muted color for footer */
+}
+
+
+    </style>
 </head>
 <body>
-    <h1> Ovo je moj portfolio</h1>
-    <h2> Projekti</h2>
-    <ul>
-    <li> <a href="Projekt oblutak/oblutak.html"> Oblutak</a></li>
-    <li><a href="Webshop/HTML/index.html">Webshop</a>
-    
-</ul>
+    <div class="container">
+        <header>
+            <h1>Ovo je moj portfolio</h1>
+        </header>
+        <main>
+            <section id="projects">
+                <h2>Projekti</h2>
+                <ul class="project-list">
+                    <li class="project-item">
+                        <a href="Projekt oblutak/oblutak.html">Oblutak</a>
+                    </li>
+                    <li class="project-item">
+                        <a href="Webshop/HTML/index.html">Webshop</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
 </body>
 </html>

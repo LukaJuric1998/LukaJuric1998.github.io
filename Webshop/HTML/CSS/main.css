@@ -2,7 +2,10 @@ body{
             background-color: rgb(234, 225, 225);
             padding: 20px;
             margin: 0;
+            background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
 }
+  
 .main{
             display: flex;
             max-width: 100%;
@@ -12,7 +15,8 @@ body{
             font-size: 30px;
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: "caveat";
+            color: white;
             
             
         }
@@ -49,7 +53,7 @@ body{
             font-weight: bold;
             font-size: 22px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .prvaPonuda button{
               width: 100px;
@@ -85,7 +89,8 @@ body{
             font-size: 30px;
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: "caveat";
+            color: white;
             
         }
         .odjeca{
@@ -115,9 +120,9 @@ body{
         .snizenje p{
             margin-top: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .snizenje button{
              width: 100px;
@@ -146,7 +151,8 @@ body{
             font-size: 30px;
             background-color: rgb(81, 77, 77);
             text-transform: uppercase;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: "caveat";
+            color: white;
             
         }
         .trend{
@@ -178,7 +184,7 @@ body{
             font-weight: bold;
             font-size: 16px;
             color: white;
-            font-family: cursive;
+            font-family: "roboto";
         }
         .beste button{
               width: 100px;

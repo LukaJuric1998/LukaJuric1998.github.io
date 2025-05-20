@@ -4,13 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+    font-family: 'Open Sans', sans-serif; /* Fallback to a common sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light gray background */
+    color: #343a40; /* Dark gray text for better readability */
+    line-height: 1.7;
+    display: flex; /* For centering container vertically in some cases */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    flex-direction: column; /* Align items vertically */
+}
+
+/* Container for content */
+.container {
+    width: 85%;
+    max-width: 800px; /* Max width for content */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    padding: 25px 35px;
+    background-color: #ffffff; /* White background for the content box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border-radius: 10px; /* Rounded corners */
+    flex-grow: 1; /* Allows container to grow if body is flex */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #007bff; /* Blue accent color */
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #007bff; /* Blue accent color */
+    margin-bottom: 5px;
+}
+
+
+/* Navigation / Links Section */
+.navigation h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ced4da; /* Subtle separator */
+}
+
+.navigation ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.navigation li {
+    background-color: #f8f9fa; /* Light background for list items */
+    margin-bottom: 12px;
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation li:hover {
+    background-color: #e2e6ea;
+    transform: translateX(5px); /* Slight shift on hover */
+    transform: scale(1.2);
+}
+
+.navigation li a {
+    display: block; /* Make the entire list item clickable */
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #0056b3; /* Darker blue for links */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+    color: #003875; /* Even darker blue on link text hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Dark footer background */
+    color: #f8f9fa; /* Light text for footer */
+    font-size: 0.9em;
+    width: 100%; /* Make footer span full width if not inside container */
+    margin-top: auto; /* Pushes footer to bottom if content is short */
+}
+    </style>
 </head>
 <body>
-    Ovo je naš prvi Html dokument.
-    github test
-    <p>Wilkommen</p>
-    <li><a href="portfolio.html">Ovdje se nalazi moj portfolio</a></li>
-    <li><a href="Projekt oblutak/oblutak.html"> Oblutak</a></li>
-    <li><a href="Webshop/HTML/index.html">Webshop</a></li>
+    <div class="container">
+        <header>
+            <h1>Dobrodošli na moje projekte</h1>
+        </header>
+
+        <main>
+           
+
+            <nav class="navigation">
+                <h2>Korisni Linkovi:</h2>
+                <ul>
+                    <li><a href="portfolio.html">Ovdje se nalazi moj portfolio</a></li>
+                    
+                </ul>
+            </nav>
+        </main>
 </body>
 </html>

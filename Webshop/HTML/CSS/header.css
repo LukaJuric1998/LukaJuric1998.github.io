@@ -2,7 +2,12 @@
             background-color: rgb(234, 225, 225);
             padding: 20px;
             margin: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
+        body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+}
         .first{
             display: flex;
             max-width: 100%;
@@ -13,9 +18,11 @@
         }
         .first h1{
             font-size: 48px;
-            font-family: cursive;
+            font-family: "caveat";
             text-transform: uppercase;
             padding: 10px;
+            color: rgb(224, 223, 217);
+            
             
         }
         .first img{
@@ -63,7 +70,7 @@
             text-align: center;
             text-transform: uppercase;
             color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: "roboto";
             
         }
         .second li a{
