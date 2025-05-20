@@ -1,0 +1,221 @@
+   body{
+            margin: 0;
+            background-color: antiquewhite;
+             background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+        }
+   
+   .forma{
+    margin-bottom: 20px;
+    display: block;
+    max-width: 25%;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    flex-wrap: wrap;
+    
+   }
+   #formica{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+   }
+    input[type=email]{
+    max-width: 70%;
+    height: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   }
+   .text{
+    max-width: 80%;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px black;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+   }
+   .form-botun{
+    height: 40px;
+    max-width: 150px;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+   }
+   .form-botun:hover{
+    background-color:white;
+    color: rgb(70, 68, 68);
+   }
+   .pitanja{
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(138, 136, 134);
+    text-align: center;
+      padding: 10px;
+   }
+   .pitanja h1{
+    font-size: 36px;
+    font-family: "roboto";
+    text-transform: uppercase;
+    color: black;
+   
+
+   }
+   .questions{
+         max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+           background-color: rgb(70, 68, 68);
+       }
+       .questions h2{
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: "roboto";
+        color: white;
+       }
+       p{
+        font-size: 1rem;
+        font-family: "roboto";
+        background-color: white;
+        color: rgb(70, 68, 68);
+        text-align: justify;
+       }
+       .upit{
+        background-color:  rgb(70, 68, 68);
+        padding: 20px;
+        font-size: 28px;
+        text-align: center;
+        font-family: "roboto";
+        text-transform: uppercase;
+        color:white;
+       }
+       @media screen and (max-width: 768px) {
+  .forma {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  #formica {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  input[type=email] {
+    width: 150%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .text {
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  .form-botun {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .pitanja h1 {
+    font-size: 28px;
+  }
+
+  .questions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .upit {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .forma {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  #formica {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  input[type=email] {
+    max-width: 80%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .text {
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  .form-botun {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .pitanja h1 {
+    font-size: 28px;
+  }
+
+  .questions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .upit {
+    font-size: 20px;
+    padding: 15px;
+  }
+}

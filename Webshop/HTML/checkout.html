@@ -7,6 +7,8 @@
         body{
             margin: 0;
             background-color: antiquewhite;
+             background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
         }
         .metode{
             margin-top: 50px;
@@ -24,7 +26,7 @@
             border-radius: 10px;
         }
         .metode h2{
-            font-family: cursive;
+            font-family: "roboto";
             color: white;
             text-transform: uppercase;
             font-size: 30px;
@@ -33,14 +35,14 @@
         label{
             font-size: 22px;
             padding: 10px;
-            font-family: cursive;
+            font-family: "roboto";
             color: white;
         }
         .Odaberi{
              margin-top: 10px;
             padding: 20px;
             font-size: 20px;
-            font-family:  cursive;
+            font-family:  "roboto";
             background-color: rgb(37, 35, 35);
             color: white;
             border: none;
@@ -53,6 +55,28 @@
             color: rgb(37, 35, 35);
             background-color: white;
         }
+             @media screen and (max-width: 768px) {
+  .metode {
+    max-width: 80%; 
+    padding: 20px;
+  }
+
+  .metode h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .Odaberi {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+        
 
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -62,12 +86,12 @@
     <div class="metode">
         <h2>Odaberite metodu plačanja</h2>
         <label>
-    <input type="radio" name="placanje" value="kartica" checked>
+    <input type="radio" name="placanje" value="Visa" checked>
     Visa <i class="fa-brands fa-cc-visa"></i>
   </label>
 
   <label>
-    <input type="radio" name="placanje" value="pouzece">
+    <input type="radio" name="placanje" value="MasterCard">
     MasterCard <i class="fa-brands fa-cc-mastercard"></i>
   </label>
 
@@ -79,8 +103,27 @@
     <input type="radio" name="placanje" value="zlato">
     Zlato <i class="fa-solid fa-coins"></i>
   </label>
-  <button class="Odaberi">Odaberi</button>
+  <button id="potvrdi" class="Odaberi">Potvrdi plačanje</button>
     </div>
+    <script>
+  document.getElementById("potvrdi").addEventListener("click", function () {
     
+    const metode = document.getElementsByName("placanje");
+    let odabranaMetoda = "";
+
+   
+    for (let i = 0; i < metode.length; i++) {
+      if (metode[i].checked) {
+        odabranaMetoda = metode[i].value;
+        break;
+      }
+    }
+
+    // Spremi u localStorage
+    localStorage.setItem("metodaPlacanja", odabranaMetoda);
+
+});
+</script>
+
 </body>
 </html>

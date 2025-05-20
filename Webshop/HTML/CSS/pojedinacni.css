@@ -1,0 +1,141 @@
+  body {
+      background-color: antiquewhite;
+      padding: 20px;
+       background: #91b2cc;
+       background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+    }
+
+    .proizvod {
+           background-color: rgb(81, 77, 77);
+           height: auto;
+           padding-bottom:  20px;
+            border-radius: 8px;
+            max-width: 500px;
+            color: white;
+            text-align: center;
+            box-shadow: 1px 1px 6px black;
+            margin: auto;
+            margin-bottom: 20px;
+            
+            
+      
+    }
+
+    .proizvod img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      
+    }
+
+    
+
+    .proizvod p {
+      font-size: 18px;
+      margin: 10px 0;
+      font-family: "roboto";
+      color: white;
+    }
+
+    .proizvod button {
+             width: 130px;
+            height: 60px;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            background-color: rgb(37, 35, 35);
+            text-transform: uppercase;
+            transition: transform 0.5s ease-in;
+            margin-top: 15px;
+            
+    }
+
+    .proizvod button:hover {
+            cursor: pointer;
+            color: rgb(37, 35, 35);
+            background-color: white;
+            transition: 0.5s ease-in;
+    }
+    .proizvod h1{
+      font-family: "caveat";
+      font-size: 36px;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    #velicina{
+      
+      font-size: 18px;
+      font-family: "roboto";
+      color: white;
+      background-color:  rgb(37, 35, 35);;
+    }
+     label{
+      
+      font-size: 18px;
+      color: white;
+      font-family: "roboto";
+      margin-top: 10px;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px)  {
+  .proizvod {
+    margin-top: 20px;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .proizvod h1 {
+    font-size: 30px;
+  }
+
+  .proizvod p {
+    font-size: 16px;
+  }
+
+  .proizvod button {
+    width: 130px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  #velicina {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
+ @media screen and (max-width: 480px)  {
+  .proizvod {
+    margin-top: 20px;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .proizvod h1 {
+    font-size: 26px;
+  }
+
+  .proizvod p {
+    font-size: 14px;
+  }
+
+  .proizvod button {
+    width: 130px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  #velicina {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,212 @@
+  body{
+            background-color: antiquewhite;
+            margin: 0;
+             background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+        }
+        .botuni{
+            margin-top: 10px;
+            display: flex;
+            background-color: rgb(70, 68, 68);
+            height: auto;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+        }
+        .botuni button{
+            width: 150px;
+            font-size: 18px;
+            font-family: cursive;
+            color: rgb(87, 69, 69);
+           background-color: white;
+           padding: 10px;
+           text-transform: uppercase;
+           transform: transform 0.5s ease-in;
+           
+        }
+        .botuni button:hover{
+            cursor: pointer;
+             color: white;
+             background-color: rgb(87, 69, 69);
+             transition: 0.5s ease-in;
+            
+             
+        }
+        #prvi,#drugi,#tim{
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+           background-color: rgb(70, 68, 68);
+        }
+        #prvi h1, #drugi h1,#tim h1{
+            font-family: "caveat";
+            text-transform: uppercase;
+            font-size: 36px;
+            text-align: center;
+            color: white;
+        }
+         p{
+            display: flex;
+            font-size: 1rem;
+             font-family: "roboto";
+             background-color: rgb(70, 68, 68);
+             color: white;
+             margin-bottom: 20px;
+           
+        }
+        .img1,.img2{
+            margin-top: 20px;
+            display: flex;
+            max-width: 100%;
+            background-color: rgb(87, 69, 69);
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+        .slika img, .img2 img{
+            width: 50%;
+            margin-top: 20px;
+            height: 300px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+
+        }
+        .slike{
+             display: flex;
+            max-width: 100%;
+            height: auto
+        }
+        .osobe{
+            margin-top: 20px;
+            background-color: rgb(70, 68, 68);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+        .osobe img{
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .osobe p{
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            font-family: cursive;
+            text-align: center;
+            display: block;
+            
+        }
+        @media screen and (max-width: 768px) {
+  .botuni {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .botuni button {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  #prvi, #drugi, #tim {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  #prvi h1, #drugi h1, #tim h1 {
+    font-size: 28px;
+  }
+
+  .slike {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .osobe {
+    width: 70%;
+    margin: 10px auto;
+    align-content: center;
+  }
+
+  .osobe p {
+    font-size: 16px;
+  }
+
+  .slika img, .img2 img {
+    height: 250px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 10px;
+    text-align: center;
+  }
+}
+    @media screen and (max-width: 480px) {
+  .botuni {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .botuni button {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  #prvi, #drugi, #tim {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #prvi h1, #drugi h1, #tim h1 {
+    font-size: 28px;
+  }
+
+  .slike {
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .osobe {
+    width: 80%;
+    margin: 10px auto;
+    align-content: center;
+    object-fit: cover;
+  }
+
+  .osobe p {
+    font-size: 16px;
+  }
+
+  .slika img {
+    height: 250px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 10px;
+    text-align: center;
+  }
+}
