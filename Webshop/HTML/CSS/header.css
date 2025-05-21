@@ -4,10 +4,7 @@
             margin: 0;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        body.dark-mode {
-        background-color: #121212;
-        color: #ffffff;
-}
+  
         .first{
             display: flex;
             max-width: 100%;
@@ -115,6 +112,9 @@
             transition: transform 0.5s ease-in;
             
             
+        }
+        #theme-toggle{
+         background-color: rgb(87, 69, 69);
         }
            
     .hamburger {
