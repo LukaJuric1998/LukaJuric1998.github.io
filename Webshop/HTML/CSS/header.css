@@ -91,7 +91,7 @@
         }
         @media screen and (max-width: 768px)   {
             .first h1{
-            font-size: 36px;
+            font-size: 32px;
             font-family: cursive;
             text-transform: uppercase;
             padding: 10px;
