@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     max-width: 350px;
+    height: auto;
    }
    input[type = text]{
     max-width: 80%;
@@ -58,25 +59,12 @@
     box-shadow: 1px 1px 4px black;
     border-radius: 4px;
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    
     margin-left: auto;
     margin-right: auto;
    }
-   input[type=tel]{
-    max-width: 80%;
-    height: 10px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-   }
+   
    
    .slazemse li{
     margin-left: 30px;
@@ -151,7 +139,7 @@
             <form id="formica">
                 <input type="text" id="imeprezime" name="ime" placeholder="Ime i prezime">
                 <input type="email" id="mail" name="email" placeholder="E-mail">
-                <input type="tel" id="telefon" name="telefon" placeholder="Telefon">
+                <input type="text" id="adresa" name="adresa" placeholder="Adresa">
                 
 
     
@@ -179,7 +167,7 @@
     // Dohvaćanje vrijednosti
     const imePrezime = document.getElementById('imeprezime').value;
     const email = document.getElementById('mail').value;
-    const telefon = document.getElementById('telefon').value;
+    const adresa = document.getElementById('adresa').value;
     const slazemSe = document.getElementById('slazemse').checked;
 
     // Provjera checkboxa
@@ -192,7 +180,7 @@
     const formPodaci = {
       imePrezime,
       email,
-      telefon,
+      adresa,
       slazemSe
     };
 

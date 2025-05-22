@@ -5,106 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Završena Narudžba</title>
     <style>
-       
-        body{
-            margin: 0;
-            background-color: antiquewhite;
-             background: #91b2cc;
-            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
-        }
-          .spinner {
-            width: 80px;
-            height: 80px;
-            border: 4px solid #ccc;
-            border-top: 4px solid #242527;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .loading{
-          font-size: 22px;
-          font-family: "roboto";
-        }
-        #h1{
-          display: none;
-          font-size: 30px;
-          font-family: "caveat";
-          color: white;
-        }
-        #h2,h3,h4{
-          display: none;
-          font-size: 22px;
-          font-family: "roboto";
-          color: white;
-          text-decoration: underline;
-        }
-        #narudzba{
-          max-width: 40%;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          background-color: rgb(81, 77, 77);
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 30px;
-          border-radius: 10px;
-          height: auto;
-          
-          
-          
-        }
-        #demo,#demo2{
-          font-family: "roboto";
-          font-size: 18px;
-          color: white;
-        }
-        @media (max-width: 768px) {
-  #narudzba {
-    max-width: 60%;
-    padding: 15px;
-  }
-
-  .spinner {
-    width: 60px;
-    height: 60px;
-  }
-
-  .loading, #h2, h3, h4, #demo, #demo2 {
-    font-size: 16px;
-  }
-
-  #h1 {
-    font-size: 26px;
-  }
-}
-       @media (max-width: 480px) {
-  #narudzba {
-    max-width: 70%;
-    
-  }
-
-  .spinner {
-    width: 60px;
-    height: 60px;
-  }
-
-  .loading, #h2, h3, h4, #demo, #demo2 {
-    font-size: 12px;
-  }
-
-  #h1 {
-    font-size: 20px;
-  }
-}
         
     </style>
 </head>
+<link rel="stylesheet" href="CSS/zavsrenanarudzba.css">
+<link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.jpg">
 <body>
   <div id="loading" class="loading">Vaša narudžba se obrađuje......
   <div class="spinner"></div>
@@ -117,57 +22,56 @@
     <p id="demo2"></p>
     <h4 id="h4">Vaša narudžba:</h4>
     <p id="demo"></p>
+    <a id="tipka" class="botun" href="index.html">Povratak na naslovnicu</a>
+
+
   </div>
-    <script>
-       setTimeout(() => {
-      // Sakrij loadingt
-      document.getElementById("loading").style.display = "none";
-      // Prikaži pravi sadržaj
-      document.getElementById("demo").style.display = "block";
-      document.getElementById("h1").style.display = "block";
-      document.getElementById("h2").style.display = "block";
-      document.getElementById("h3").style.display = "block";
-      document.getElementById("h4").style.display = "block";
+   <script>
+  setTimeout(() => {
+    // Sakrij loading
+    document.getElementById("loading").style.display = "none";
 
-  const kosarica = localStorage.getItem("kosarica");
-  const proizvodi = JSON.parse(kosarica);
+    // Prikaži elemente
+    document.getElementById("demo").style.display = "block";
+    document.getElementById("demo2").style.display = "block";
+    document.getElementById("h1").style.display = "block";
+    document.getElementById("h2").style.display = "block";
+    document.getElementById("h3").style.display = "block";
+    document.getElementById("h4").style.display = "block";
+    document.getElementById("tipka").style.display = "inline-block";
 
-  const demo = document.getElementById("demo");
+    // Košarica
+    const kosarica = localStorage.getItem("kosarica");
+    const proizvodi = JSON.parse(kosarica);
+    const demo = document.getElementById("demo");
 
-  if (proizvodi && proizvodi.length > 0) {
-    proizvodi.forEach(proizvod => {
-      const p = document.createElement('p');
-      p.textContent = `Naziv: ${proizvod.naziv}, Veličina: ${proizvod.odabranaVelicina}, Cijena: ${proizvod.cijena} €`;
-      demo.appendChild(p);
-    })
-  } else {
-    demo.textContent = "Košarica je prazna .";
-  } },5000);
-</script>
-<script>
-        setTimeout(() => {
-      // Sakrij loadingt
-      document.getElementById("loading").style.display = "none";
-      // Prikaži pravi sadržaj
-      document.getElementById("demo2").style.display = "block";
+    if (proizvodi && proizvodi.length > 0) {
+      proizvodi.forEach(proizvod => {
+        const p = document.createElement('p');
+        p.textContent = `Naziv: ${proizvod.naziv}, Veličina: ${proizvod.odabranaVelicina}, Cijena: ${proizvod.cijena} €`;
+        demo.appendChild(p);
+      });
+    } else {
+      demo.textContent = "Košarica je prazna.";
+    }
 
-    // Dohvaćanje iz Local Storage
+    // Form podaci
     const podaci = localStorage.getItem('formicaPodaci');
+    const ispisDiv = document.getElementById("demo2");
 
     if (podaci) {
       const formPodaci = JSON.parse(podaci);
-
-      // Prikazivanje podataka u HTML-u
-      const ispisDiv = document.getElementById("demo2");
       ispisDiv.innerHTML = `
         <p>Ime i prezime: ${formPodaci.imePrezime}</p>
         <p>Email: ${formPodaci.email}</p>
-        <p>Telefon: ${formPodaci.telefon}</p>
-        
+        <p>Adresa dostave: ${formPodaci.adresa}</p>
       `;
     } else {
-      document.getElementById("demo2").innerHTML = 'Nema spremljenih podataka.';
-    }},5000);
-  </script>
+      ispisDiv.innerHTML = 'Nema spremljenih podataka.';
+    }
+
+  }, 5000);
+</script>
+
 </body>
 </html>

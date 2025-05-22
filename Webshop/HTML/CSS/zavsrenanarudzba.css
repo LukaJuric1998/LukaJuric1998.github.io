@@ -1,0 +1,122 @@
+
+        #demo, #demo2, #h1, #h2, #h3, #h4, #tipka {
+      display: none;
+    }
+        body{
+            margin: 0;
+            background-color: antiquewhite;
+             background: #91b2cc;
+            background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+        }
+          .spinner {
+            width: 80px;
+            height: 80px;
+            border: 4px solid #ccc;
+            border-top: 4px solid #242527;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading{
+          font-size: 22px;
+          font-family: "roboto";
+        }
+        #h1{
+          display: none;
+          font-size: 30px;
+          font-family: "caveat";
+          color: white;
+        }
+        #h2,h3,h4{
+          display: none;
+          font-size: 22px;
+          font-family: "roboto";
+          color: white;
+          text-decoration: underline;
+        }
+        #narudzba{
+          max-width: 40%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          background-color: rgb(81, 77, 77);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          border-radius: 10px;
+          height: auto;
+        }
+         .botun{
+             margin-top: 10px;
+             margin-bottom: 15px;
+            padding: 15px;
+            font-size: 18px;
+            font-family:  "roboto";
+            background-color: rgb(37, 35, 35);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.5s, color 0.5s,transform 0.5s ease;
+            text-decoration: none;
+        }
+        a{
+          text-decoration: none;
+        }
+        .botun:hover{
+            color: rgb(37, 35, 35);
+            background-color: white;
+        }
+          
+          
+        
+        #demo,#demo2{
+          font-family: "roboto";
+          font-size: 18px;
+          color: white;
+        }
+        @media (max-width: 768px) {
+  #narudzba {
+    max-width: 60%;
+    padding: 15px;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loading, #h2, h3, h4, #demo, #demo2 {
+    font-size: 16px;
+  }
+
+  #h1 {
+    font-size: 26px;
+  }
+}
+       @media (max-width: 480px) {
+  #narudzba {
+    max-width: 70%;
+    
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loading, #h2, h3, h4, #demo, #demo2 {
+    font-size: 12px;
+  }
+
+  #h1 {
+    font-size: 20px;
+  }
+}
