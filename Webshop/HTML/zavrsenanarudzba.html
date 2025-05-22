@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Završena Narudžba</title>
     <style>
-         body{
+       
+        body{
             margin: 0;
             background-color: antiquewhite;
              background: #91b2cc;
@@ -62,9 +63,45 @@
           font-family: "roboto";
           font-size: 18px;
           color: white;
-         
         }
-        
+        @media (max-width: 768px) {
+  #narudzba {
+    max-width: 60%;
+    padding: 15px;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loading, #h2, h3, h4, #demo, #demo2 {
+    font-size: 16px;
+  }
+
+  #h1 {
+    font-size: 26px;
+  }
+}
+       @media (max-width: 480px) {
+  #narudzba {
+    max-width: 70%;
+    
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loading, #h2, h3, h4, #demo, #demo2 {
+    font-size: 12px;
+  }
+
+  #h1 {
+    font-size: 20px;
+  }
+}
         
     </style>
 </head>
