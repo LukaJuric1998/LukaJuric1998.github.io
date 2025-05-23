@@ -1,10 +1,22 @@
-   body {
-      font-family: Arial, sans-serif;
+   body{
+        margin: 0;
       background-color: antiquewhite;
-      padding: 20px;
+      padding: 25px;
        background: #91b2cc;
        background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+         
+            
+            
+}
+        
+html.dark {
+    body { /* Or target other elements within html.dark */
+        background-color: #121212; /* Fallback */
+    background-image: linear-gradient(to right, #222222, #101010); /* Your DARK MODE gradient */
+    color: #f0f0f0;
+       
     }
+}
     .Kontakt{
           max-width: 100%;
             height: auto;
@@ -115,11 +127,15 @@
    .slazemse li{
     margin-left: 30px;
     margin-top: 10px;
+    color: rgb(123, 33, 33);
+    
    }
    .slazemse p{
     margin-left: 30px;
     margin-top: 0;
     font-size: 12px;
+     color: rgb(123, 33, 33);
+    
 
    }
    .form-botun{
