@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Responsive -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                 initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Title -->
+    <title>Moj naslov</title>
+    <!-- Meta Tags required for
+       Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <!-- Manifest File link -->
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        body{
+            background-color: rgb(187, 180, 191);
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+     <h2>Kalkulator</h2>
+  <input type="text" id="broj1" placeholder="Unesi prvi broj">
+  <input type="text" id="broj2" placeholder="Unesi drugi broj">
+  
+  <select id="operacija">
+    <option value="+">Zbrajanje (+)</option>
+    <option value="-">Oduzimanje (-)</option>
+    <option value="*">Množenje (*)</option>
+    <option value="/">Dijeljenje (/)</option>
+  </select>
+  
+  <button onclick="izracunaj()">Izračunaj</button>
+  
+  <h3>Rezultat: <span id="rezultat">-</span></h3>
+    
+
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                } catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+    <script src="serviceworker.js"></script>
+    <script>
+    function izracunaj() {
+      const broj1 = parseFloat(document.getElementById('broj1').value);
+      const broj2 = parseFloat(document.getElementById('broj2').value);
+      const operacija = document.getElementById('operacija').value;
+      let rezultat;
+
+      if (isNaN(broj1) || isNaN(broj2)) {
+        rezultat = 'Unesi oba broja!';
+      } else {
+        switch (operacija) {
+          case '+': rezultat = broj1 + broj2; break;
+          case '-': rezultat = broj1 - broj2; break;
+          case '*': rezultat = broj1 * broj2; break;
+          case '/': 
+            rezultat = broj2 !== 0 ? broj1 / broj2 : 'Dijeljenje s nulom!';
+            break;
+          default: rezultat = 'Nepoznata operacija';
+        }
+      }
+
+      document.getElementById('rezultat').textContent = rezultat;
+    }
+  </script>
+</body>
+
+</html>
