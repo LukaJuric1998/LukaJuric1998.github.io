@@ -9,12 +9,12 @@
     "description": "Ovo je moj tutorial",
     "icons": [{
           "src": "images/kocke.png",
-            "sizes": "512x512",
+            "sizes": "1200x1200",
             "type": "image/png"
         },
         {
             "src": "images/Circles.png",
-            "sizes": "512x512",
+            "sizes": "1200x1200",
             "type": "image/png"
         }
     ]
