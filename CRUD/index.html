@@ -171,55 +171,65 @@
   <div class="link">
     <a href="crud2.html">Drugi post</a>
   </div>
-  <script>
-    let form = document.getElementById("form");
-    let input = document.getElementById("input");
-    let msg = document.getElementById("msg");
-    let posts = document.getElementById("posts");
+ <script>
+  let form = document.getElementById("form");
+  let input = document.getElementById("input");
+  let msg = document.getElementById("msg");
+  let posts = document.getElementById("posts");
 
-    let data = {};
+  // Učitavanje spremljenih postova
+  let data = JSON.parse(localStorage.getItem("posts")) || [];
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      formValidation();
-    });
-
-    let formValidation = () => {
-      if (input.value === "") {
-        msg.innerHTML = "Post cannot be blank";
-      } else {
-        msg.innerHTML = "";
-        acceptData();
-        createPost();
-      }
-    };
-
-    let acceptData = () => {
-      data["text"] = input.value;
-    };
-
-    let createPost = () => {
+  // Prikaz svih postova pri učitavanju stranice
+  const showPosts = () => {
+    posts.innerHTML = "";
+    data.forEach((post, index) => {
       posts.innerHTML += `
         <div>
-          <p>${data.text}</p>
+          <p>${post.text}</p>
           <span class="options">
-            <i onClick="editPost(this)" class="fas fa-edit"></i>
-            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+            <i onClick="editPost(${index})" class="fas fa-edit"></i>
+            <i onClick="deletePost(${index})" class="fas fa-trash-alt"></i>
           </span>
         </div>
       `;
-      input.value = "";
-    };
+    });
+  };
 
-    let deletePost = (e) => {
-      e.parentElement.parentElement.remove();
-    };
+  showPosts();
 
-    let editPost = (e) => {
-      let postText = e.parentElement.previousElementSibling.innerHTML;
-      input.value = postText;
-      e.parentElement.parentElement.remove();
-    };
-  </script>
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formValidation();
+  });
+
+  let formValidation = () => {
+    if (input.value === "") {
+      msg.innerHTML = "Post cannot be blank";
+    } else {
+      msg.innerHTML = "";
+      acceptData();
+      showPosts();
+    }
+  };
+
+  let acceptData = () => {
+    data.push({ text: input.value });
+    localStorage.setItem("posts", JSON.stringify(data));
+    input.value = "";
+  };
+
+  window.deletePost = (index) => {
+    data.splice(index, 1);
+    localStorage.setItem("posts", JSON.stringify(data));
+    showPosts();
+  };
+
+  window.editPost = (index) => {
+    input.value = data[index].text;
+    deletePost(index);
+  };
+</script>
+
 </body>
 </html>
