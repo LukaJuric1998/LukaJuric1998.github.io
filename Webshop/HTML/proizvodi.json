@@ -2,7 +2,7 @@
   {
     "naziv": "Bijela majica",
     "cijena": "19,99 €",
-    "slika": "Slike/anomaly-WWesmHEgXDs-unsplash.jpg",
+    "slika": "Slike webp/anomaly-WWesmHEgXDs-unsplash.webp",
     "velicine": ["S", "M", "L", "XL"],
     "id": 1,
     "opis": "Kvalitetna bijela majica idealna za svakodnevno nošenje."
@@ -10,17 +10,17 @@
   {
     "naziv": "Jeans",
     "cijena": "69,99 €",
-    "slika": "Slike/alicia-petresc-BciCcl8tjVU-unsplash.jpg",
+    "slika": "Slike webp/alicia-petresc-BciCcl8tjVU-unsplash.webp",
     "velicine": ["S", "M", "L", "XL"],
     "id": 2,
     "opis": "Moderne Jeans hlače."
   },
-   {
+  {
     "id": 3,
     "naziv": "Nove košulje",
     "cijena": "19.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/carlos-torres-fouVDmGXoPI-unsplash.jpg",
+    "slika": "Slike webp/carlos-torres-fouVDmGXoPI-unsplash.webp",
     "opis": "Elegantne i moderne košulje za svaku priliku."
   },
   {
@@ -28,7 +28,7 @@
     "naziv": "New Balance patike",
     "cijena": "59.99 €",
     "velicine": [37, 38, 39, 40, 41, 42, 43, 44, 45],
-    "slika": "Slike/felipepelaquim-6zO5VKogoZE-unsplash.jpg",
+    "slika": "Slike webp/felipepelaquim-6zO5VKogoZE-unsplash.webp",
     "opis": "Udobne patike idealne za svakodnevno nošenje i sport."
   },
   {
@@ -36,7 +36,7 @@
     "naziv": "Nike patike",
     "cijena": "69.99 €",
     "velicine": [37, 38, 39, 40, 41, 42, 43, 44, 45],
-    "slika": "Slike/domino-studio-164_6wVEHfI-unsplash.jpg",
+    "slika": "Slike webp/domino-studio-164_6wVEHfI-unsplash.webp",
     "opis": "Popularni Nike model s vrhunskom udobnošću."
   },
   {
@@ -44,7 +44,7 @@
     "naziv": "Traperice",
     "cijena": "49.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/klaudia-piaskowska-Zy6oNZRdcjc-unsplash.jpg",
+    "slika": "Slike webp/klaudia-piaskowska-Zy6oNZRdcjc-unsplash.webp",
     "opis": "Klasične traperice koje se uklapaju u svaki stil."
   },
   {
@@ -52,7 +52,7 @@
     "naziv": "Majica kratkih rukava",
     "cijena": "9.99 €" ,
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica5.jpg",
+    "slika": "Slike webp/alex-haigh-fEt6Wd4t4j0-unsplash.webp",
     "opis": "Lagana i prozračna majica za tople dane."
   },
   {
@@ -60,7 +60,7 @@
     "naziv": "Borša",
     "cijena": "149.99 €",
     "velicine": [],
-    "slika": "Slike/arno-senoner-oCXVxwTFwqE-unsplash.jpg",
+    "slika": "Slike webp/arno-senoner-oCXVxwTFwqE-unsplash.webp",
     "opis": "Moderna i kvalitetna torba za svaki dan."
   },
   {
@@ -68,15 +68,15 @@
     "naziv": "Bluza",
     "cijena": "19.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/micheile-henderson-FpPcoOAk5PI-unsplash.jpg",
+    "slika": "Slike webp/micheile-henderson-FpPcoOAk5PI-unsplash.webp",
     "opis": "Elegantna bluza koja se lako kombinira s drugim komadima."
   },
-   {
+  {
     "id": 10,
     "naziv": "Bijela majica",
     "cijena": "8.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica1.jpg",
+    "slika": "Slike webp/majica1.webp",
     "opis": "Bijela majica od pamuka."
   },
   {
@@ -84,7 +84,7 @@
     "naziv": "Siva majica",
     "cijena": "9.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica2.jpg",
+    "slika": "Slike webp/majica2.webp",
     "opis": "Siva majica s minimalističkim dizajnom."
   },
   {
@@ -92,7 +92,7 @@
     "naziv": "Bijela majica",
     "cijena": "10.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica3.jpg",
+    "slika": "Slike webp/majica3.webp",
     "opis": "Pamučna bijela majica visoke kvalitete."
   },
   {
@@ -100,7 +100,7 @@
     "naziv": "Crna majica ",
     "cijena": "11.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica4.jpg",
+    "slika": "Slike webp/majica4.webp",
     "opis": "Crna majica s visoke kvalitete."
   },
   {
@@ -108,7 +108,7 @@
     "naziv": "Bijela majica",
     "cijena": "13.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica5.jpg",
+    "slika": "Slike webp/majica5.webp",
     "opis": "Bijela Majica s  natpisom 'Tay Son'."
   },
   {
@@ -116,23 +116,23 @@
     "naziv": "Bijela majica svjetionik",
     "cijena": "11.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica6.jpg",
+    "slika": "Slike webp/majica6.webp",
     "opis": "Bijela Majica s crtežom svjetionika."
   },
-    {
+  {
     "id": 16,
     "naziv": "Stay wild majica",
     "cijena": "13.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/majica7.jpg",
+    "slika": "Slike webp/majica7.webp",
     "opis": "Crna majica sa Stay Wild natpisom."
   },
-   {
+  {
     "id": 17,
     "naziv": "HH jaketa",
     "cijena": "169.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/Jaketa1.jpg",
+    "slika": "Slike webp/Jaketa1.webp",
     "opis": "Vodootporna HH jakna za sve vremenske uvjete."
   },
   {
@@ -140,7 +140,7 @@
     "naziv": "Crna jaketa",
     "cijena": "69.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/Jaketa2.jpg",
+    "slika": "Slike webp/Jaketa2.webp",
     "opis": "Klasična crna jakna za svakodnevnu upotrebu."
   },
   {
@@ -148,7 +148,7 @@
     "naziv": "Jeans jaketa",
     "cijena": "55.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/Jaketa3.jpg",
+    "slika": "Slike webp/Jaketa3.webp",
     "opis": "Moderna jakna od trapera s urbanim stilom."
   },
   {
@@ -156,7 +156,7 @@
     "naziv": "Zelena jaketa",
     "cijena": "65.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/jaketa4.jpg",
+    "slika": "Slike webp/jaketa4.webp",
     "opis": "Zelena lagana jakna savršena za proljeće i jesen."
   },
   {
@@ -164,7 +164,7 @@
     "naziv": "Kožna jaketa",
     "cijena": "149.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/jaketa5.jpg",
+    "slika": "Slike webp/jaketa5.webp",
     "opis": "Elegantan kožni model za hladnije dane."
   },
   {
@@ -172,7 +172,7 @@
     "naziv": "Bart Simpson jaketa",
     "cijena": "109.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/jaketa6.jpg",
+    "slika": "Slike webp/jaketa6.webp",
     "opis": "Jakna s Bart Simpson dizajnom za ljubitelje pop kulture."
   },
   {
@@ -180,7 +180,7 @@
     "naziv": "North Face jaketa",
     "cijena": "165.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/jaketa7.jpg",
+    "slika": "Slike webp/jaketa7.webp",
     "opis": "Topla i kvalitetna jakna renomirane marke North Face."
   },
   {
@@ -188,7 +188,7 @@
     "naziv": "Ferrari kombinezon",
     "cijena": "1499.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/ferrari.jpg",
+    "slika": "Slike webp/ferrari.webp",
     "opis": "Ekskluzivan Ferrari kombinezon za istinske fanove brzine i stila."
   },
   {
@@ -196,7 +196,7 @@
     "naziv": "Crne starke",
     "cijena": "69.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/cipele1.jpg",
+    "slika": "Slike webp/cipele1.webp",
     "opis": "Klasične crne starke idealne za svakodnevnu kombinaciju."
   },
   {
@@ -204,7 +204,7 @@
     "naziv": "Bijele starke",
     "cijena": "69.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/cipele2.jpg",
+    "slika": "Slike webp/cipele2.webp",
     "opis": "Trendi bijele starke koje pristaju uz svaki outfit."
   },
   {
@@ -212,7 +212,7 @@
     "naziv": "Siva Air Max",
     "cijena": "119.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/cipele3.jpg",
+    "slika": "Slike webp/cipele3.webp",
     "opis": "Udobne sivo-crne Air Max patike s maksimalnim jastučićem."
   },
   {
@@ -220,7 +220,7 @@
     "naziv": "Crvena Air Jordan",
     "cijena": "129.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/cipele4.jpg",
+    "slika": "Slike webp/cipele4.webp",
     "opis": "Stilski izražajne Air Jordan patike u crvenoj boji."
   },
   {
@@ -228,7 +228,7 @@
     "naziv": "Kroksice",
     "cijena": "39.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/kroksice.jpg",
+    "slika": "Slike webp/kroksice.webp",
     "opis": "Lagane kroksice savršene za ljeto i opušteni stil."
   },
   {
@@ -236,7 +236,7 @@
     "naziv": "Crne vensice",
     "cijena": "69.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/vansice.jpg",
+    "slika": "Slike webp/vansice.webp",
     "opis": "Popularne crne Vans patike za urbani izgled."
   },
   {
@@ -244,7 +244,7 @@
     "naziv": "Crne adidas patike",
     "cijena": "89.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/adidas.jpg",
+    "slika": "Slike webp/adidas.webp",
     "opis": "Klasične crne Adidas patike s udobnim potplatom."
   },
   {
@@ -252,15 +252,15 @@
     "naziv": "Bijele Air Max",
     "cijena": "119.99 €",
     "velicine": ["37", "38", "39", "40", "41", "42", "43", "44", "45"],
-    "slika": "Slike/nike-air-max.jpg",
+    "slika": "Slike webp/nike-air-max.webp",
     "opis": "Elegantne i udobne bijele Air Max patike."
   },
-   {
+  {
     "id": 33,
     "naziv": "Jeans",
     "cijena": "59.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/tamara-bellis-zDyJOj8ZXG0-unsplash.jpg",
+    "slika": "Slike webp/tamara-bellis-zDyJOj8ZXG0-unsplash.webp",
     "opis": "Klasične traper hlače udobnog kroja."
   },
   {
@@ -268,7 +268,7 @@
     "naziv": "Sive hlače",
     "cijena": "39.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/gace1.jpg",
+    "slika": "Slike webp/gace1.webp",
     "opis": "Elegantne sive hlače za svaki dan."
   },
   {
@@ -276,7 +276,7 @@
     "naziv": "Cargo pants",
     "cijena": "79.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/gace2.jpg",
+    "slika": "Slike webp/gace2.webp",
     "opis": "Praktične cargo hlače s više džepova."
   },
   {
@@ -284,7 +284,7 @@
     "naziv": "Smeđe hlače",
     "cijena": "129.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/gace3.jpg",
+    "slika": "Slike webp/gace3.webp",
     "opis": "Kvalitetne hlače u toploj smeđoj nijansi."
   },
   {
@@ -292,7 +292,7 @@
     "naziv": "Plave bijele hlače",
     "cijena": "39.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/gace4.jpg",
+    "slika": "Slike webp/gace4.webp",
     "opis": "Ljetne hlače svijetle boje, idealne za toplije dane."
   },
   {
@@ -300,7 +300,7 @@
     "naziv": "Jeans 2",
     "cijena": "79.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/alicia-petresc-BciCcl8tjVU-unsplash.jpg",
+    "slika": "Slike webp/alicia-petresc-BciCcl8tjVU-unsplash.webp",
     "opis": "Moderni traper kroj za urbani stil."
   },
   {
@@ -308,15 +308,15 @@
     "naziv": "Jeans 3",
     "cijena": "79.99 €",
     "velicine": ["S", "M", "L", "XL"],
-    "slika": "Slike/klaudia-piaskowska-Zy6oNZRdcjc-unsplash.jpg",
+    "slika": "Slike webp/klaudia-piaskowska-Zy6oNZRdcjc-unsplash.webp",
     "opis": "Još jedan klasični par traper hlača s modernim detaljima."
   },
-   {
+  {
     "id": 40,
     "naziv": "Zlatne naočale",
     "cijena": "209.99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-    "slika": "Slike/cvike1.jpg",
+    "slika": "Slike webp/cvike1.webp",
     "opis": "Elegantne zlatne naočale za sofisticiran izgled."
   },
   {
@@ -324,16 +324,15 @@
     "naziv": "Crne sunčane naočale",
     "cijena": "239,99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-     "slika": "Slike/cvike2.jpg",
+    "slika": "Slike webp/cvike2.webp",
     "opis": "Klasične crne sunčane naočale sa UV zaštitom."
-   
   },
   {
     "id": 42,
     "naziv": "Ray Ban",
     "cijena": "249.99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-    "slika": "Slike/cvike3.jpg",
+    "slika": "Slike webp/cvike3.webp",
     "opis": "Popularne Ray Ban sunčane naočale originalnog dizajna."
   },
   {
@@ -341,7 +340,7 @@
     "naziv": "Bijele naočale",
     "cijena": "189.99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-    "slika": "Slike/cvike4.jpg",
+    "slika": "Slike webp/cvike4.webp",
     "opis": "Moderne bijele naočale koje pristaju svakom outfitu."
   },
   {
@@ -349,7 +348,7 @@
     "naziv": "Aviators",
     "cijena": "249.99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-    "slika": "Slike/cvike5.jpg",
+    "slika": "Slike webp/cvike5.webp",
     "opis": "Ikonični aviator stil naočala za klasičan izgled."
   },
   {
@@ -357,9 +356,7 @@
     "naziv": "Oakley",
     "cijena": "279.99 €",
     "velicine": ["136 mm", "137 mm", "138 mm", "139 mm", "140 mm"],
-    "slika": "Slike/cvike6.jpg",
+    "slika": "Slike webp/cvike6.webp",
     "opis": "Sportske Oakley naočale vrhunskih performansi."
-    
   }
-
 ]
