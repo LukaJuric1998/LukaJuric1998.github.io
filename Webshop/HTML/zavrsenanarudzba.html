@@ -27,7 +27,7 @@
 
 
   </div>
-   <script>
+  <script>
   setTimeout(() => {
     // Sakrij loading
     document.getElementById("loading").style.display = "none";
@@ -41,7 +41,7 @@
     document.getElementById("h4").style.display = "block";
     document.getElementById("tipka").style.display = "inline-block";
 
-    // Košarica
+    // Prikaz košarice
     const kosarica = localStorage.getItem("kosarica");
     const proizvodi = JSON.parse(kosarica);
     const demo = document.getElementById("demo");
@@ -56,7 +56,7 @@
       demo.textContent = "Košarica je prazna.";
     }
 
-    // Form podaci
+    // Prikaz podataka iz forme
     const podaci = localStorage.getItem('formicaPodaci');
     const ispisDiv = document.getElementById("demo2");
 
@@ -71,8 +71,13 @@
       ispisDiv.innerHTML = 'Nema spremljenih podataka.';
     }
 
+    //  OBRIŠI podatke iz localStorage
+    localStorage.removeItem("kosarica");
+   
+
   }, 5000);
 </script>
+
 <script src="darkmode.js"></script>
 </body>
 </html>
