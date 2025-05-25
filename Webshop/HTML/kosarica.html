@@ -51,7 +51,7 @@
             proizvodDiv.classList.add("kosarica-proizvod");
 
             proizvodDiv.innerHTML = `
-                <img src="${proizvod.slika}" alt="${proizvod.naziv}">
+                <img src="${proizvod.slika}" loading="lazy" alt="${proizvod.naziv}">
                 <h3>${proizvod.naziv}</h3>
                 <p>Cijena: ${parseFloat(proizvod.cijena).toFixed(2)} €</p>
                 <p>Veličina: ${proizvod.odabranaVelicina}</p>

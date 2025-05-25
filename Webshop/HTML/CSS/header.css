@@ -51,7 +51,7 @@
         }
         .fa-solid:hover{
             color: rgb(233, 233, 26);
-            transform: rotate(720deg);
+            transform: scale(1.2);
         }
         .second{
             max-width: 100%;
