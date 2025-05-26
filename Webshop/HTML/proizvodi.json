@@ -59,7 +59,7 @@
     "id": 8,
     "naziv": "Borša",
     "cijena": "149.99 €",
-    "velicine": [],
+    "velicine": ["S", "M", "L", "XL"],
     "slika": "Slike webp/arno-senoner-oCXVxwTFwqE-unsplash.webp",
     "opis": "Moderna i kvalitetna torba za svaki dan."
   },
