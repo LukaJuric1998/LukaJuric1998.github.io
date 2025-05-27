@@ -1,12 +1,10 @@
  body {
       margin: 0;
-      padding: 25px;
+      padding: 35px;
       background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
     }
 
-    html, body {
-      min-height: 100vh;
-    }
+    
 
     html.dark body {
       background-image: linear-gradient(to right, #222222, #101010);
@@ -91,7 +89,7 @@
     }
 
     .signin {
-       margin-top: 20px; 
+     margin-top: 10px;
       padding: 20px;
       background-color: rgb(70, 68, 68);
     }
@@ -127,12 +125,7 @@
       max-width: 90%;
     }
 
-    .alert-icon {
-      margin-right: 10px;
-      font-size: 1.3rem;
-      display: flex;
-      align-items: center;
-    }
+  
     .alert-success {
   background-color: rgb(81, 77, 77);
   color: white;           /* Your new text color */
