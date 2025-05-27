@@ -36,49 +36,65 @@
     // Učitavanje košarice iz localStorage
     let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
 
-    function prikaziKosaricu() {
-        const container = document.getElementById("kosarica-container");
-        container.innerHTML = "";
+function prikaziKosaricu() {
+    const container = document.getElementById("kosarica-container");
+    container.innerHTML = "";
 
-        if (kosarica.length === 0) {
-            container.innerHTML = "<p>Košarica je prazna.</p>";
-            document.getElementById("ukupno").textContent = "Ukupno: 0.00 €";
-            return;
-        }
-
-        kosarica.forEach((proizvod, index) => {
-            const proizvodDiv = document.createElement("div");
-            proizvodDiv.classList.add("kosarica-proizvod");
-
-            proizvodDiv.innerHTML = `
-                <img src="${proizvod.slika}" loading="lazy" alt="${proizvod.naziv}">
-                <h3>${proizvod.naziv}</h3>
-                <p>Cijena: ${parseFloat(proizvod.cijena).toFixed(2)} €</p>
-                <p>Veličina: ${proizvod.odabranaVelicina}</p>
-                <button class="ukloni-btn" onclick="ukloniIzKosarice(${index})">Ukloni</button>
-            `;
-
-            container.appendChild(proizvodDiv);
-        });
-
-        izracunajUkupno();
+    if (kosarica.length === 0) {
+        container.innerHTML = "<p>Košarica je prazna.</p>";
+        document.getElementById("ukupno").textContent = "Ukupno: 0.00 €";
+        azurirajBrojUKosarici();
+        return;
     }
 
-    function izracunajUkupno() {
-        let ukupno = kosarica.reduce((suma, p) => suma + parseFloat(p.cijena), 0);
-        document.getElementById("ukupno").textContent = `Ukupno: ${ukupno.toFixed(2)} €`;
-    }
+    kosarica.forEach((proizvod, index) => {
+        const proizvodDiv = document.createElement("div");
+        proizvodDiv.classList.add("kosarica-proizvod");
 
-    function ukloniIzKosarice(index) {
-        kosarica.splice(index, 1);
-        localStorage.setItem("kosarica", JSON.stringify(kosarica));
-        prikaziKosaricu();
-    }
+        proizvodDiv.innerHTML = `
+            <img src="${proizvod.slika}" loading="lazy" alt="${proizvod.naziv}">
+            <h3>${proizvod.naziv}</h3>
+            <p>Cijena: ${parseFloat(proizvod.cijena).toFixed(2)} €</p>
+            <p>Veličina: ${proizvod.odabranaVelicina}</p>
+            <button class="ukloni-btn" onclick="ukloniIzKosarice(${index})">Ukloni</button>
+        `;
 
-    window.onload = () => {
-        prikaziKosaricu();
-    };
+        container.appendChild(proizvodDiv);
+    });
+
+    izracunajUkupno();
+    azurirajBrojUKosarici();
+}
+
+function izracunajUkupno() {
+    let ukupno = kosarica.reduce((suma, p) => suma + parseFloat(p.cijena), 0);
+    document.getElementById("ukupno").textContent = `Ukupno: ${ukupno.toFixed(2)} €`;
+}
+
+function ukloniIzKosarice(index) {
+    kosarica.splice(index, 1);
+    localStorage.setItem("kosarica", JSON.stringify(kosarica));
+    prikaziKosaricu(); // poziva i azurirajBrojUKosarici
+}
+
+// 🔄 Funkcija koja ažurira broj uz ikonu u headeru
+function azurirajBrojUKosarici() {
+    const kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
+    const brojElement = document.querySelector(".cart-count");
+
+    if (brojElement) {
+        brojElement.textContent = kosarica.length;
+    }
+}
+
+
+window.onload = () => {
+    prikaziKosaricu();
+    azurirajBrojUKosarici();
+};
+
 </script>
 <script src="darkmode.js"></script>
+<script src="cart.js"></script>
 </body>
 </html>
