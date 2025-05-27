@@ -119,9 +119,9 @@
 
     #alert-container {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1055;
+      top: 50px;
+      right: 50px;
+      
       max-width: 90%;
     }
 
