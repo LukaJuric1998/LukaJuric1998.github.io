@@ -3,109 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalji proizvoda</title>
-  <style>
-  
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/pojedinacni.css">
   <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.webp">
+  <style>
+    
+  </style>
 </head>
 <body>
-   <header id="header"></header>
-     <script src="header.js"></script>
-<main>
-<div id="proizvod" class="proizvod">
-  <p>Učitavanje proizvoda...</p>
-  <button onclick="dodajKosaricu()">Dodaj u košaricu</button>
-</div>
-</main>
-<footer id="footer"></footer>
-     <script src="footer.js"></script>
-<script>
-// Dohvat ID-a iz URL-a
-function getParam(name) {
-  return new URLSearchParams(window.location.search).get(name);
-}
+  <header id="header"></header>
+  <script src="header.js"></script>
 
-const id = parseInt(getParam('id'));
-const container = document.getElementById('proizvod');
+  <div id="alert-container"></div>
 
-fetch('proizvodi.json')
-  .then(response => {
-    if (!response.ok) throw new Error('Greška pri učitavanju JSON-a');
-    return response.json();
-  })
-  .then(podaci => {
-    const proizvod = podaci.find(p => p.id === id);
+  <main>
+    <div id="proizvod" class="proizvod">
+      <p>Učitavanje proizvoda...</p>
+      </div>
+  </main>
 
-    if (proizvod) {
-      container.innerHTML = `
-        <h1>${proizvod.naziv}</h1>
-        <img src="${proizvod.slika}" alt="${proizvod.naziv}" style="max-width:400px;">
-        <p><strong>Cijena:</strong> ${proizvod.cijena}</p>
-        <label for="velicina"><strong>Odaberite veličinu:</strong></label>
-        <select id="velicina">
-          <option value="">-- Odaberi --</option>
-          ${proizvod.velicine.map(v => `<option value="${v}">${v}</option>`).join('')}
-        </select><br>
-        <button onclick="dodajKosaricu(${proizvod.id})">Dodaj u košaricu</button>
-      `;
-    } else {
-      container.innerHTML = '<p>Proizvod nije pronađen.</p>';
+  <footer id="footer"></footer>
+  <script src="footer.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script>
+    // Dohvat ID-a iz URL-a
+    function getParam(name) {
+      return new URLSearchParams(window.location.search).get(name);
     }
-  })
-  .catch(error => {
-    console.error(error);
-    container.innerHTML = '<p>Došlo je do greške pri učitavanju podataka.</p>';
-  });
 
-  function dodajKosaricu(idProizvoda) {
-  const selectVelicina = document.getElementById("velicina");
-  const odabranaVelicina = selectVelicina?.value;
+    const id = parseInt(getParam('id'));
+    const container = document.getElementById('proizvod');
+    const alertContainer = document.getElementById('alert-container');
 
-  if (!odabranaVelicina) {
-    alert("Molimo odaberite veličinu!");
-    return;
-  }
+    // Function to show Bootstrap alert
+    function showBootstrapAlert(message, type = 'info', duration = 5000) {
+      // Clear existing alerts to avoid stacking if not desired
+      // alertContainer.innerHTML = ''; // Uncomment if you only want one alert at a time
 
-  fetch('proizvodi.json')
-    .then(res => res.json())
-    .then(data => {
-      const proizvod = data.find(p => p.id === idProizvoda);
-      if (!proizvod) {
-        alert("Proizvod nije pronađen.");
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = `
+        <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+          ${message}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      `;
+      alertContainer.append(wrapper);
+
+      // Automatically remove the alert after 'duration' milliseconds
+      if (duration > 0) {
+        setTimeout(() => {
+          const alertInstance = bootstrap.Alert.getInstance(wrapper.firstChild);
+          if (alertInstance) {
+            alertInstance.close();
+          } else if (wrapper.firstChild) { // Fallback if instance not found but element exists
+            wrapper.firstChild.remove();
+          }
+        }, duration);
+      }
+    }
+
+    fetch('proizvodi.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Greška pri učitavanju JSON-a');
+        return response.json();
+      })
+      .then(podaci => {
+        const proizvod = podaci.find(p => p.id === id);
+
+        if (proizvod) {
+          container.innerHTML = `
+            <h1>${proizvod.naziv}</h1>
+            <img src="${proizvod.slika}" alt="${proizvod.naziv}" style="max-width:400px;">
+            <p><strong>Cijena:</strong> ${proizvod.cijena}</p>
+            <label for="velicina"><strong>Odaberite veličinu:</strong></label>
+            <select id="velicina" class="form-select" style="width: auto; display: inline-block; margin-bottom: 10px;">
+              <option value="">-- Odaberi --</option>
+              ${proizvod.velicine.map(v => `<option value="${v}">${v}</option>`).join('')}
+            </select><br>
+            <button class="btn btn-primary" onclick="dodajKosaricu(${proizvod.id})">Dodaj u košaricu</button>
+          `;
+        } else {
+          container.innerHTML = '<p>Proizvod nije pronađen.</p>';
+          showBootstrapAlert('Proizvod nije pronađen.', 'warning');
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        container.innerHTML = '<p>Došlo je do greške pri učitavanju podataka.</p>';
+        showBootstrapAlert('Došlo je do greške pri učitavanju podataka.', 'danger');
+      });
+
+    function dodajKosaricu(idProizvoda) {
+      const selectVelicina = document.getElementById("velicina");
+      const odabranaVelicina = selectVelicina?.value;
+
+      if (!odabranaVelicina) {
+        showBootstrapAlert("Molimo odaberite veličinu!", 'warning');
         return;
       }
 
-      const cijenaBroj = parseFloat(proizvod.cijena.replace('€', '').trim().replace(',', '.'));
+      fetch('proizvodi.json')
+        .then(res => res.json())
+        .then(data => {
+          const proizvod = data.find(p => p.id === idProizvoda);
+          if (!proizvod) {
+            showBootstrapAlert("Proizvod nije pronađen.", 'danger');
+            return;
+          }
 
-      const proizvodZaKosaricu = {
-        id: proizvod.id,
-        naziv: proizvod.naziv,
-        cijena: cijenaBroj,
-        slika: proizvod.slika,
-        odabranaVelicina: odabranaVelicina
-      };
+          // Ensure cijena is treated as a string before replacing
+          const cijenaString = String(proizvod.cijena);
+          const cijenaBroj = parseFloat(cijenaString.replace('€', '').trim().replace(',', '.'));
 
-      let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
-      kosarica.push(proizvodZaKosaricu);
-      localStorage.setItem("kosarica", JSON.stringify(kosarica));
+          if (isNaN(cijenaBroj)) {
+            console.error("Cijena nije validan broj:", proizvod.cijena);
+            showBootstrapAlert("Greška u formatu cijene proizvoda.", 'danger');
+            return;
+          }
 
-      alert(`${proizvod.naziv} (${odabranaVelicina}) je dodan u košaricu.`);
-    })
-    .catch(err => {
-      console.error("Greška prilikom dodavanja u košaricu:", err);
-      alert("Došlo je do greške.");
-    });
-}
+          const proizvodZaKosaricu = {
+            id: proizvod.id,
+            naziv: proizvod.naziv,
+            cijena: cijenaBroj,
+            slika: proizvod.slika,
+            odabranaVelicina: odabranaVelicina
+          };
 
+          let kosarica = JSON.parse(localStorage.getItem("kosarica")) || [];
+          kosarica.push(proizvodZaKosaricu);
+          localStorage.setItem("kosarica", JSON.stringify(kosarica));
 
-  
-
-
-</script>
-<script src="darkmode.js"></script>
- 
-
+          showBootstrapAlert(`${proizvod.naziv} (${odabranaVelicina}) je dodan u košaricu.`, 'success');
+        })
+        .catch(err => {
+          console.error("Greška prilikom dodavanja u košaricu:", err);
+          showBootstrapAlert("Došlo je do greške prilikom dodavanja u košaricu.", 'danger');
+        });
+    }
+  </script>
+  <script src="darkmode.js"></script>
 </body>
 </html>
-

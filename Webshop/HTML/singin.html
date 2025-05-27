@@ -1,216 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      body{
-        margin: 0;
-      background-color: antiquewhite;
-      padding: 25px;
-       background: #91b2cc;
-       background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
-         
-            
-            
-}
-        
-html.dark {
-    body { /* Or target other elements within html.dark */
-        background-color: #121212; /* Fallback */
-    background-image: linear-gradient(to right, #222222, #101010); /* Your DARK MODE gradient */
-    color: #f0f0f0;
-       
-    }
-}
-     .formback{
-    margin-top: 20px;
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid black;
-    
-   
-    
-   } 
-   .forma{
-    margin-bottom: 20px;
-    display: block;
-    max-width: 45%;
-    height: auto;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 4px black;
-    flex-wrap: wrap;
-    
-   }
-   #formica{
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    height: auto;
-   }
-   input[type = text]{
-    max-width: 80%;
-    height: 10px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    
-   }
-   input[type=email]{
-    max-width: 80%;
-    height: 10px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 10px;
-    
-    margin-left: auto;
-    margin-right: auto;
-   }
-   
-   
-   .slazemse li{
-    margin-left: 30px;
-    margin-top: 10px;
-    color: brown;
-   }
-   .slazemse p{
-    margin-left: 30px;
-    margin-top: 0;
-    font-size: 12px;
-    color: brown;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forma s Alertima</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-   }
-   .form-botun{
-    height: 40px;
-    width: 150px;
-    background-color: rgb(70, 68, 68);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .form-botun:hover{
-    background-color:white;
-    color: rgb(70, 68, 68);
-   }
-   .signin{
-            max-width: 100%;
-            height: auto;
-            display: block;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 20px;
-           background-color: rgb(70, 68, 68)
-   }
-   .signin h2{
-    font-size: 28px;
-    text-transform: uppercase;
-    font-family: "roboto";
-    text-align: center;
-    color: white;
-    
-   }
-   .signin p{
-    font-size: 1rem;
-    font-family: "roboto";
-    text-align: center;
-    color: white;
-   }
-   span{
-    padding: 10px;
-    font-size: 12px;
-    font-family: cursive;
-   }
-    </style>
-    <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.webp">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Slike/jon-tyson-lNaVQayNMEU-unsplash.webp">
+  <link rel="stylesheet" href="CSS/singin.css">
+  <style>
+   
+  </style>
 </head>
+
 <body>
-    <header id="header"></header>
-     <script src="header.js"></script>
-     <main>
+  <header id="header"></header>
+  <script src="header.js"></script>
+
+  <div id="alert-container"></div>
+
+  <main>
     <div class="signin">
-        <h2>Prijavite se i možda dobijete posebne pogodnosti</h2>
-        <p>Kupnjom 10 proizvoda dobijete sladoled gratis</p>
-       
+      <h2>Prijavite se i možda dobijete posebne pogodnosti</h2>
+      <p>Kupnjom 10 proizvoda dobijete sladoled gratis</p>
     </div>
-     <div class="formback">
-        <div class="forma">
-            <form id="formica">
-                <input type="text" id="imeprezime" name="ime" placeholder="Ime i prezime">
-                <input type="email" id="mail" name="email" placeholder="E-mail">
-                <input type="text" id="adresa" name="adresa" placeholder="Adresa">
-                
 
-    
-               
-                <div class="slazemse">
+    <div class="formback">
+      <div class="forma">
+        <form id="formica">
+          <input type="text" id="imeprezime" name="ime" placeholder="Ime i prezime" />
+          <input type="email" id="mail" name="email" placeholder="E-mail" />
+          <input type="text" id="adresa" name="adresa" placeholder="Adresa" />
+          <div class="slazemse">
+            <li>
+              <input type="checkbox" id="slazemse" value="check" name="slazemse" />Slažem se
+            </li>
+            <p>Korištenjem ovog obrasca prihvaćate prikupljanje i obradu osobnih podataka danih u obrascu bez kojih vaš zahtjev u obrascu ne može biti ispunjen</p>
+          </div>
+          <button type="submit" class="form-botun">Pošalji upit</button>
+        </form>
+      </div>
+    </div>
 
-                    <li style="list-style-type: none;"><input type="checkbox" id="slazemse" value="check" name="slazemse">Slažem se </li>
-                    <p>Korištenjem ovog obrasca prihvaćate prikupljanje i obradu osobnih podataka danih u obrascu bez kojih vaš zahtjev u obrascu ne može biti ispunjen</p>
-                  </div> 
-                  
-                    <button type="submit" class="form-botun"> Pošalji upit </button>
-                    </form>
-                    </div>
-          </div><br>
-          <span>Napomena: Svaki proizvod mora biti više od 50€</span>
-          
-        </main>
-         <footer id="footer"></footer>
-     <script src="footer.js"></script>
-    
-        <script>
-  document.getElementById('formica').addEventListener('submit', function (e) {
-    e.preventDefault(); // sprječava slanje forme
+    <span>Napomena: Svaki proizvod mora biti više od 50€</span>
+  </main>
 
-    // Dohvaćanje vrijednosti
-    const imePrezime = document.getElementById('imeprezime').value;
-    const email = document.getElementById('mail').value;
-    const adresa = document.getElementById('adresa').value;
-    const slazemSe = document.getElementById('slazemse').checked;
+  <footer id="footer"></footer>
+  <script src="footer.js"></script>
 
-    // Provjera checkboxa
-    if (!slazemSe) {
-      alert("Morate prihvatiti uvjete.");
-      return;
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const alertContainer = document.getElementById('alert-container');
+
+    function showBootstrapAlert(message, type = 'info', duration = 5000, iconHtml = '') {
+      const wrapper = document.createElement('div');
+      const customTypes = ['oceanblue', 'alert-sunrise'];
+      const isCustom = customTypes.includes(type);
+      const closeBtnClass = isCustom ? 'btn-close-white' : '';
+
+      wrapper.innerHTML = `
+        <div class="alert alert-${type} alert-dismissible d-flex align-items-center fade show" role="alert">
+          ${iconHtml ? `<span class="alert-icon">${iconHtml}</span>` : ''}
+          <div>${message}</div>
+          <button type="button" class="btn-close ms-auto ${closeBtnClass}" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      `;
+      alertContainer.append(wrapper);
+
+      if (duration > 0) {
+        setTimeout(() => {
+          const alertElement = wrapper.firstChild;
+          if (alertElement) {
+            const alertInstance = bootstrap.Alert.getOrCreateInstance(alertElement);
+            alertInstance.close();
+          }
+        }, duration);
+      }
     }
 
-    // Spremanje u Local Storage
-    const formPodaci = {
-      imePrezime,
-      email,
-      adresa,
-      slazemSe
-    };
+    document.getElementById('formica').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    localStorage.setItem('formicaPodaci', JSON.stringify(formPodaci));
-    alert("Podaci su uspješno spremljeni!");
-    
-    
-  });
-</script>
-<script src="darkmode.js"></script>
+      const imePrezime = document.getElementById('imeprezime').value.trim();
+      const email = document.getElementById('mail').value.trim();
+      const adresa = document.getElementById('adresa').value.trim();
+      const slazemSe = document.getElementById('slazemse').checked;
+
+ if (!imePrezime || !email || !adresa) {
+        showBootstrapAlert("Molimo popunite sva polja.", 'warning', 5000, '<i class="bi bi-exclamation-triangle-fill text-warning"></i>');
+        return;
+      }
+
+      if (!slazemSe) {
+        showBootstrapAlert("Morate prihvatiti uvjete korištenja.", 'danger', 5000, '<i class="bi bi-x-circle-fill text-danger"></i>');
+        return;
+      }
+
+      const formPodaci = { imePrezime, email, adresa, slazemSe };
+      localStorage.setItem('formicaPodaci', JSON.stringify(formPodaci));
+
+      showBootstrapAlert("Podaci su uspješno spremljeni!", 'success', 5000, '<i class="bi bi-check-circle-fill text-success"></i>');
+    });
+  </script>
+
+  <script src="darkmode.js"></script>
 </body>
 </html>

@@ -1,0 +1,140 @@
+ body {
+      margin: 0;
+      padding: 25px;
+      background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%);
+    }
+
+    html, body {
+      min-height: 100vh;
+    }
+
+    html.dark body {
+      background-image: linear-gradient(to right, #222222, #101010);
+      color: #f0f0f0;
+    }
+
+   
+
+    .formback {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .forma {
+      margin: 40px auto 20px;
+      max-width: 450px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid gray;
+      box-shadow: 1px 1px 4px black;
+    }
+
+    #formica {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type=text],
+    input[type=email] {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid gray;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    #imeprezime {
+      margin-top: 0;
+    }
+
+    .slazemse {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .slazemse li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      color: brown;
+    }
+
+    .slazemse input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .slazemse p {
+      font-size: 12px;
+      color: black;
+    }
+
+    .form-botun {
+      height: 45px;
+      max-width: 200px;
+      width: 100%;
+      background-color: rgb(70, 68, 68);
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+      margin: 10px auto;
+      display: block;
+      cursor: pointer;
+    }
+
+    .form-botun:hover {
+      background-color: #5a5a5a;
+    }
+
+    .signin {
+       margin-top: 20px; 
+      padding: 20px;
+      background-color: rgb(70, 68, 68);
+    }
+
+    .signin h2 {
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .signin p {
+      text-align: center;
+      color: white;
+      font-family: "Roboto", sans-serif;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      font-family: cursive;
+      margin-top: 10px;
+    }
+
+    #alert-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1055;
+      max-width: 90%;
+    }
+
+    .alert-icon {
+      margin-right: 10px;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+    }
+    .alert-success {
+  background-color: rgb(81, 77, 77);
+  color: white;           /* Your new text color */
+  border-color: #80c080;     /* Your new border color */
+}
