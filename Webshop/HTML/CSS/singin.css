@@ -1,6 +1,6 @@
  body {
-      margin: 0 !important;
-      padding: 20px !important; 
+      margin: 0;
+      padding: 20px; 
       background: linear-gradient(320deg, rgb(218, 224, 228) 0%, rgba(123, 123, 125, 0.6) 77%, rgb(181, 181, 172) 100%); 
     }
 
