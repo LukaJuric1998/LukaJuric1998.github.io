@@ -32,6 +32,7 @@
             height: auto ;
             background-color: rgb(87, 69, 69);
             justify-content: space-between;
+           
             
         }
         .first h1{
@@ -52,10 +53,12 @@
         }
         
         .ikone{
-            display: flex;
             align-items: center;
-            padding: 30px;
-            gap: 60px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+            gap: 50px;
         }
         .fa-solid{
             color: white;
@@ -74,9 +77,8 @@
             height: auto;
             background-color: rgb(113, 100, 100);
             display: flex;
-            gap: 35px;
-            padding: 10px;
-            align-content: center ;
+            gap: 30px;
+            align-content: center;
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
@@ -171,51 +173,46 @@
         border-top: 1px solid  rgb(87, 69, 69);
     }
 }
-   @media screen and  (max-width:480px){
-        
-          .first h1{
-            font-size: 18px;
-            font-family: cursive;
-            text-transform: uppercase;
-            
-        }
-        .first img{
-            
-            width: 80px;
-            height: 80px;
-            border-radius: 80px;
-            padding: 10px;
-        }
-        
-        .ikone{
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            gap: 20px;
-        }
-        .fa-solid{
-            color: white;
-            font-size: 12px;
-            text-shadow: 1px 1px 6px black;
-            transition: transform 0.5s ease-in;
-            
-            
-        }
-           
+   @media screen and (max-width: 480px) {
+
+    .first h1 {
+        font-size: 18px;
+        font-family: cursive;
+        text-transform: uppercase;
+    }
+
+    .first img {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        padding: 10px;
+    }
+
+    .ikone {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .fa-solid {
+        color: white;
+        font-size: 12px;
+        text-shadow: 1px 1px 6px black;
+        transition: transform 0.5s ease-in;
+    }
+
     .hamburger {
-        
-        display: block;              
+        display: block;
         padding: 10px;
         background-color: rgb(87, 69, 69);
         color: white;
-        border-radius: 0 !important;  
-        
+        border-radius: 0 !important;
     }
 
     .second {
         flex-direction: column;
         align-items: flex-start;
-
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease-in-out;
@@ -223,12 +220,12 @@
 
     .second.active {
         max-height: 500px;
-        padding: 10px; 
+        padding: 10px;
     }
 
     .second li {
-       width: 100%;
+        width: 100%;
         padding: 12px 20px;
-        border-top: 1px solid  rgb(87, 69, 69);
+        border-top: 1px solid rgb(87, 69, 69);
     }
 }
