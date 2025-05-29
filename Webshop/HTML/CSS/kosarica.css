@@ -17,7 +17,8 @@ html.dark {
        
     }
 }
-        .h1 {
+        .naslov {
+            margin-top: 10px;
             text-transform: uppercase;
             font-family: cursive;
             font-size: 30px;
