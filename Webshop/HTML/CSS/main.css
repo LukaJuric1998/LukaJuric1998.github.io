@@ -114,7 +114,7 @@ html.dark {
             height: auto;
             justify-content: center;
             align-content: center;
-            gap: 100px;
+            gap: 60px;
         }
         .snizenje{
             
@@ -127,6 +127,7 @@ html.dark {
             width: 30%;
             margin-left: 20px;
             margin-right: 20px;
+            
         }
         .snizenje img{
             width: 100%;
@@ -177,7 +178,7 @@ html.dark {
             height: auto;
             margin-top: 20px;
             display: flex;
-            gap: 50px;
+            gap: 40px;
         }
         .beste{
              margin-top: 10px;
