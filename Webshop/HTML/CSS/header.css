@@ -58,7 +58,7 @@
             display: flex;
             justify-content: space-between;
             padding: 60px;
-            gap: 50px;
+            gap: 60px;
         }
         .fa-solid{
             color: white;
@@ -128,7 +128,7 @@
             display: flex;
             align-items: center;
             padding: 30px;
-            gap: 30px;
+            gap: 20px;
         }
         .fa-solid{
             color: white;
@@ -176,23 +176,24 @@
    @media screen and (max-width: 480px) {
 
     .first h1 {
-        font-size: 18px;
+        font-size: 14px;
         font-family: cursive;
         text-transform: uppercase;
     }
 
     .first img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 0px;
         border-radius: 80px;
         padding: 10px;
     }
 
     .ikone {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         padding: 20px;
         gap: 20px;
+        flex-wrap: nowrap;
     }
 
     .fa-solid {
