@@ -50,7 +50,7 @@ html.dark {
 
     .forma {
       margin: 40px auto 20px;
-      max-width: 450px;
+      max-width: 400px;
       padding: 20px;
       background-color: white;
       border: 1px solid gray;
@@ -65,7 +65,7 @@ html.dark {
     input[type=text],
     input[type=email],
     input[type=tel] {
-      width:90%;
+     max-width: 100%;
       padding: 15px;
       font-size: 16px;
       border: 1px solid gray;
@@ -73,6 +73,7 @@ html.dark {
       border-radius: 4px;
       margin-top: 10px;
       margin-bottom: 15px;
+      
     }
 
     #imeprezime {
