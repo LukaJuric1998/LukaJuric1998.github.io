@@ -54,7 +54,7 @@
         
         .ikone{
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             display: flex;
             justify-content: space-between;
             padding: 60px;
@@ -115,6 +115,7 @@
             font-family: cursive;
             text-transform: uppercase;
             padding: 10px;
+            
         }
         .first img{
             
@@ -179,6 +180,7 @@
         font-size: 14px;
         font-family: cursive;
         text-transform: uppercase;
+        display: none;
     }
 
     .first img {
